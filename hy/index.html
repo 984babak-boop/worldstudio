@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hy" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World Studio — ինտերակտիվ 3D և 2D վեբ դիզայն</title>
+<meta name="description" content="World Studio՝ ինտերակտիվ 3D կայքեր և հավելվածներ 1 999 CHF-ից, 2D կայքեր՝ 499 CHF-ից։ Շվեյցարիա։">
+<link rel="canonical" href="https://worldstudio.ch/hy/">
+<link rel="alternate" hreflang="de" href="https://worldstudio.ch/">
+<link rel="alternate" hreflang="fr" href="https://worldstudio.ch/fr/">
+<link rel="alternate" hreflang="it" href="https://worldstudio.ch/it/">
+<link rel="alternate" hreflang="en" href="https://worldstudio.ch/en/">
+<link rel="alternate" hreflang="es" href="https://worldstudio.ch/es/">
+<link rel="alternate" hreflang="es-MX" href="https://worldstudio.ch/es-mx/">
+<link rel="alternate" hreflang="es-AR" href="https://worldstudio.ch/es-ar/">
+<link rel="alternate" hreflang="pt-BR" href="https://worldstudio.ch/pt-br/">
+<link rel="alternate" hreflang="sv" href="https://worldstudio.ch/sv/">
+<link rel="alternate" hreflang="da" href="https://worldstudio.ch/da/">
+<link rel="alternate" hreflang="fi" href="https://worldstudio.ch/fi/">
+<link rel="alternate" hreflang="tr" href="https://worldstudio.ch/tr/">
+<link rel="alternate" hreflang="ru" href="https://worldstudio.ch/ru/">
+<link rel="alternate" hreflang="hy" href="https://worldstudio.ch/hy/">
+<link rel="alternate" hreflang="ka" href="https://worldstudio.ch/ka/">
+<link rel="alternate" hreflang="az" href="https://worldstudio.ch/az/">
+<link rel="alternate" hreflang="he" href="https://worldstudio.ch/he/">
+<link rel="alternate" hreflang="ar" href="https://worldstudio.ch/ar/">
+<link rel="alternate" hreflang="fa" href="https://worldstudio.ch/fa/">
+<link rel="alternate" hreflang="hi" href="https://worldstudio.ch/hi/">
+<link rel="alternate" hreflang="zh-CN" href="https://worldstudio.ch/zh/">
+<link rel="alternate" hreflang="ja" href="https://worldstudio.ch/ja/">
+<link rel="alternate" hreflang="ko" href="https://worldstudio.ch/ko/">
+<link rel="alternate" hreflang="x-default" href="https://worldstudio.ch/">
+<meta name="theme-color" content="#000000">
+<meta property="og:site_name" content="World Studio">
+<meta property="og:title" content="World Studio — ինտերակտիվ 3D և 2D վեբ դիզայն">
+<meta property="og:description" content="World Studio՝ ինտերակտիվ 3D կայքեր և հավելվածներ 1 999 CHF-ից, 2D կայքեր՝ 499 CHF-ից։ Շվեյցարիա։">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://worldstudio.ch/hy/">
+<meta property="og:locale" content="hy_AM">
+<meta property="og:image" content="https://worldstudio.ch/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=mwkwgydy">
+<link rel="modulepreload" href="/js/app.js?v=mwkwgydy">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://worldstudio.ch/#org","name":"World Studio","url":"https://worldstudio.ch/","logo":"https://worldstudio.ch/favicon.svg","image":"https://worldstudio.ch/img/og.jpg","email":"contact@worldstudio.ch","address":{"@type":"PostalAddress","addressCountry":"CH"},"areaServed":["CH","Worldwide"],"knowsLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"],"description":"World Studio՝ ինտերակտիվ 3D կայքեր և հավելվածներ 1 999 CHF-ից, 2D կայքեր՝ 499 CHF-ից։ Շվեյցարիա։"},{"@type":"WebSite","@id":"https://worldstudio.ch/#site","url":"https://worldstudio.ch/","name":"World Studio","publisher":{"@id":"https://worldstudio.ch/#org"},"inLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"]},{"@type":"WebPage","@id":"https://worldstudio.ch/hy/#page","url":"https://worldstudio.ch/hy/","name":"World Studio — ինտերակտիվ 3D և 2D վեբ դիզայն","description":"World Studio՝ ինտերակտիվ 3D կայքեր և հավելվածներ 1 999 CHF-ից, 2D կայքեր՝ 499 CHF-ից։ Շվեյցարիա։","inLanguage":"hy","isPartOf":{"@id":"https://worldstudio.ch/#site"},"about":{"@id":"https://worldstudio.ch/#org"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#deck">Անցնել բովանդակությանը</a>
+<canvas id="gl" aria-hidden="true"></canvas>
+<picture><source media="(max-aspect-ratio:1/1),(max-width:760px)" srcset="/tex/poster_m.jpg"><img id="poster" src="/tex/poster_d.jpg" alt="" fetchpriority="high"></picture>
+<div class="fx vignette"></div><div class="fx shade"></div>
+<header class="top">
+  <a class="brand" href="#" data-go="0"><span class="mark"></span><span>WORLD STUDIO</span></a>
+  <div class="tools-r">
+    <button class="hbtn" id="langbtn" type="button" aria-label="Լեզու"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.4 5.3 3.4 8.5s-1 6.1-3.4 8.5M12 3.5C9.6 5.9 8.6 8.8 8.6 12s1 6.1 3.4 8.5"/></svg><span>HY</span></button>
+    <a class="hbtn" id="authbtn" href="/app/#login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.4 4-5 7.2-5s5.9 1.6 7.2 5"/></svg><span>Մուտք / Գրանցում</span></a>
+    <a class="hbtn solid" id="startbtn" href="#start" data-go="1">Սկսել նախագիծ</a>
+    <button class="iconbtn" id="menubtn" type="button" aria-label="Բոլոր էջերը"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</header>
+<main id="deck">
+<section class="pg pg-hero" id="hero" data-i="0" aria-labelledby="h-hero"><div class="inner">
+  <div class="box">
+    <h1 class="wordmark" id="h-hero" aria-label="World Studio"><span class="wl" aria-hidden="true">WORLD</span><span class="wl" aria-hidden="true">STUDIO</span></h1>
+    <p class="hero-sub a">Ինտերակտիվ 3D կայքերի և հավելվածների այլ աշխարհ</p>
+    <div class="ctas a"><a class="btn primary" href="#start" data-go="1">Սկսել նախագիծ</a><a class="btn ghost" href="/app/" data-auth>Մուտք / Գրանցում</a></div>
+  </div>
+  <p class="hint a"><i></i>Շարունակելու համար ոլորեք կամ սահեցրեք</p>
+</div></section>
+<section class="pg pg-start" id="start" data-i="1" aria-labelledby="h-start"><div class="inner">
+  <div class="box">
+    <p class="kicker a">Սկսել նախագիծ</p><h2 class="h" id="h-start">Ձեր գաղափարը դարձրեք փորձառություն, որը մարդիկ կհիշեն։</h2>
+    <ul class="offers"><li class="a d3"><span class="dot"></span><b>Ինտերակտիվ 3D փորձառություններ</b><em>1 999 CHF-ից</em></li><li class="a d2"><span class="dot"></span><b>Վիզուալ 2D փորձառություններ</b><em>499 CHF-ից</em></li></ul>
+  </div>
+  <form class="cform panel a" novalidate data-form>
+  <div class="fh"><h3>Նախագծի հայտ</h3><p>Թողեք ձեր տվյալները, և մենք կկապվենք ձեզ հետ՝ նախագիծը սկսելու համար։</p></div>
+  <div class="row2">
+    <label class="f"><span>Անուն</span><input name="first_name" required maxlength="80" autocomplete="given-name"></label>
+    <label class="f"><span>Ազգանուն</span><input name="last_name" required maxlength="80" autocomplete="family-name"></label>
+  </div>
+  <div class="row2">
+    <label class="f"><span>Բջջային հեռախոս</span><input name="phone" type="tel" inputmode="tel" required maxlength="30" pattern="[0-9 +()\-]{6,30}" autocomplete="tel" dir="ltr"></label>
+    <label class="f"><span>Էլ. փոստ</span><input name="email" type="email" required maxlength="160" autocomplete="email" dir="ltr"></label>
+  </div>
+  <fieldset class="types"><legend>Նախագծի տեսակը</legend><label class="tchip"><input type="radio" name="project_type" value="3d"><span>3D</span></label><label class="tchip"><input type="radio" name="project_type" value="2d"><span>2D</span></label><label class="tchip"><input type="radio" name="project_type" value="unsure"><span>Դեռ չգիտեմ</span></label></fieldset>
+  <label class="f"><span>Նախագծի մասին</span><textarea name="message" rows="3" required minlength="10" maxlength="4000" placeholder="օր.՝ 3D կայք ոսկերչական խանութի համար, երեք լեզվով"></textarea></label>
+  <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="send"><button type="submit" class="btn primary">Ուղարկել հայտը և սկսել</button><p class="privacy">Ձեր տվյալներն օգտագործում ենք միայն այս հայտին պատասխանելու համար։</p></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+<section class="pg pg-edge" id="edge" data-i="2" aria-labelledby="h-edge"><div class="inner"><div class="box"><p class="kicker a">Շուկան այսօր</p><h2 class="h" id="h-edge">Առանձնանալը երբեք պատահականություն չէ։</h2><p class="lead a">Ինտերնետը և արհեստական բանականությունը յուրաքանչյուր հաճախորդի թույլ են տալիս հեշտությամբ համեմատել ձեզ մրցակիցների հետ։ Առցանց լինելն ինքնին այլևս առավելություն չէ․ հաղթում է նա, ով տարբերվում է և հիշվում։</p><p class="lead a">Գրեթե բոլոր բիզնեսներն ունեն սոցիալական ցանցի էջ և կայք։ Իրական տարբերությունը ծագում է, երբ կայքը ոչ թե պարզապես ցուցափեղկ է, այլ ձեր մարքեթինգի և հաճախորդներ ներգրավելու ռազմավարության մաս։ Սա աշխատում է թե՛ ստարտափների, թե՛ հաստատված բրենդների համար և ամրապնդում է ձեր դիրքը շուկայում ու վաճառքը։</p></div></div></section>
+<section class="pg pg-approach" id="approach" data-i="3" aria-labelledby="h-approach"><div class="inner"><div class="box"><p class="kicker a">Մեր մոտեցումը</p><h2 class="h" id="h-approach">Մենք պարզապես կայքեր չենք նախագծում։ Մենք կառուցում ենք ձեր բրենդի թվային աշխարհը։</h2><p class="lead a">Մեզ համար դիզայնը կոդից և վիզուալից ավելին է։ Այն սկսվում է ձեր բիզնեսը հասկանալուց, և հենց այդ ըմբռնումն է ձևավորում կառուցվածքը, պատումը, վիզուալ ինքնությունը և այն, թե ինչպես են մարդիկ օգտվում ձեր կայքից։</p>
+    <ol class="chips"><li class="a"><small>01</small>Ապրանքներ և ծառայություններ</li><li class="a"><small>02</small>Թիրախային շուկա</li><li class="a"><small>03</small>Հաճախորդների վարքագիծ</li><li class="a"><small>04</small>Մրցակցային առավելություն</li></ol></div></div></section>
+<section class="pg pg-story" id="story" data-i="4" aria-labelledby="h-story"><div class="inner"><div class="box"><p class="kicker a">Բրենդի պատմությունը</p><h2 class="h" id="h-story">Ձեր բիզնեսի արժեքները վերածում ենք նպատակ ունեցող պատմության։</h2><p class="lead a">Պատմում ենք այն կոնցեպտուալ դիզայնի, պատկերի, գույնի, շարժման և ինտերակտիվ 3D տարածքների միջոցով։</p>
+    <div class="tools a" aria-hidden="true"><span>Կոնցեպտ</span><i></i><span>Պատկեր</span><i></i><span>Գույն</span><i></i><span>Շարժում</span><i></i><span>3D տարածք</span></div>
+    <ol class="steps"><li class="a"><small>01</small>Ներկայացնում է ապրանքը</li><li class="a"><small>02</small>Փոխանցում է դրա արժեքը</li><li class="a"><small>03</small>Ստեղծում է վստահություն</li><li class="a"><small>04</small>Բրենդը դարձնում է հիշվող</li></ol></div></div></section>
+<section class="pg pg-screens" id="screens" data-i="5" aria-labelledby="h-screens"><div class="inner"><div class="box"><p class="kicker a">Ադապտիվ</p><h2 class="h" id="h-screens">Անթերի փորձառություն ցանկացած էկրանին</h2><p class="lead a">Ձեր կայքը պահպանում է նույն որակը հեռախոսներում, պլանշետներում, նոութբուքերում և մեծ էկրաններին։ Դասավորությունը, տեքստը և շարժումը հարմարեցվում են յուրաքանչյուր չափին, այլ ոչ թե պարզապես փոքրացվում։</p></div>
+    <div class="devices a" aria-hidden="true">
+      <figure class="laptop"><div class="lid"><div class="scr"><img src="/img/site-desktop.webp" alt="" loading="lazy" decoding="async" width="1600" height="1000"></div></div><div class="base"></div><figcaption>Համակարգիչ</figcaption></figure>
+      <figure class="phone"><div class="scr"><img src="/img/site-mobile.webp" alt="" loading="lazy" decoding="async" width="430" height="932"></div><figcaption>Բջջային</figcaption></figure>
+    </div></div></section>
+<section class="pg pg-dims" id="dims" data-i="6" aria-labelledby="h-dims"><div class="inner"><div class="box"><p class="kicker a">2D, մոուշն, 3D</p><h2 class="h" id="h-dims">Ինչով են տարբերվում 2D դիզայնը, մոուշն գրաֆիկան և ինտերակտիվ 3D-ն</h2></div>
+    <div class="cards3"><article class="dcard panel a d1">
+      <div class="vis v1" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+      <div class="txt"><h3>2D վեբ դիզայն</h3><small lang="en">2D Web Design</small><p>Մաքուր և արագ էջեր՝ պրոֆեսիոնալ պատկերներով, տեքստերով և դասավորությամբ։ Բիզնեսը ներկայացնելու հստակ և խնայողական միջոց։</p></div></article><article class="dcard panel a d2">
+      <div class="vis v2" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i><i class="orb"></i></div>
+      <div class="txt"><h3>Մոուշն գրաֆիկա</h3><small lang="en">Motion Graphics</small><p>Նույն էջերը՝ շարժման մեջ․ տեքստն ու պատկերները կենդանանում են և ուղղորդում ուշադրությունը, բայց ամեն ինչ դեռ տեղի է ունենում հարթ մակերեսի վրա։</p></div></article><article class="dcard panel a d3">
+      <div class="vis v3" data-gem title="Քաշեք՝ պտտելու համար"><span class="drag">Քաշեք՝ պտտելու համար</span></div>
+      <div class="txt"><h3>Մեր ինտերակտիվ 3D-ն</h3><small lang="en">Interactive 3D Web Design</small><p>Իրական 3D տարածք, որը ռենդերվում է ուղիղ բրաուզերում։ Այցելուները պտտում են ապրանքը, շարժվում տարածքում և մոտիկից զգում ձեր բրենդը։</p></div></article></div>
+    <p class="closer a">Իրական տարբերությունը շարժում ցույց տալը չէ։ Դա իրական 3D տարածք ստեղծելն է, որի հետ մարդիկ կարող են փոխազդել և որտեղ զգում են ձեր բրենդը։</p></div></section>
+<section class="pg pg-service" id="service" data-i="7" aria-labelledby="h-service"><div class="inner"><div class="box"><p class="kicker a">Ամբողջական ծառայություն</p><h2 class="h" id="h-service">Ձեր բիզնեսը հասկանալուց մինչև առանձնացող թվային փորձառություն</h2><p class="lead a">Ամեն ինչ մեկ թիմում։ Մենք համատեղում ենք մարքեթինգային ռազմավարությունը ծրագրային ինժեներիայի և 3D դիզայնի հետ, որպեսզի ձեր կայքն աշխատի ձեր բիզնեսի համար։</p>
+    <ol class="svc"><li class="a"><small>01</small><b>Վերլուծություն և պլանավորում</b><span>Բիզնեսի վերլուծություն՝ ռազմավարական և տեխնիկական պլանով</span></li><li class="a"><small>02</small><b>3D և անիմացիա</b><span>3D միջավայրեր, ապրանքների մոդելավորում և կինեմատոգրաֆիկ անիմացիա</span></li><li class="a"><small>03</small><b>Տեսանելի որոնման մեջ</b><span>SEO և օպտիմալացում AI որոնման համար</span></li><li class="a"><small>04</small><b>Հաճախորդների ալիքներ</b><span>Առցանց ամրագրում, պատվեր և վճարային համակարգեր</span></li><li class="a"><small>05</small><b>Մարքեթինգ + ինժեներիա</b><span>Մարքեթինգային ռազմավարություն՝ ծրագրային ինժեներիայի հետ</span></li></ol></div></div></section>
+<section class="pg pg-biz" id="biz" data-i="8" aria-labelledby="h-biz"><div class="inner"><div class="box"><p class="kicker a">Յուրաքանչյուր բիզնեսի համար</p><h2 class="h" id="h-biz">Ստարտափներից մինչև միջազգային կորպորացիաներ՝ ձեզ հարմար կայք։</h2><p class="lead a">Ինչ էլ որ վաճառեք կամ առաջարկեք, և ինչ չափի էլ լինի ձեր բիզնեսը, մենք կնախագծենք կայք, որը համապատասխանում է ձեր բիզնեսին այսօր և աճում է նրա հետ վաղը։</p>
+    <ol class="ladder"><li class="a" style="--k:0"><i></i><b>Ստարտափներ և հիմնադիրներ</b><span>Վստահելի տեսք առաջին իսկ օրվանից և արագ մեկնարկ։</span></li><li class="a" style="--k:1"><i></i><b>Փոքր և տեղական բիզնեսներ</b><span>Թող ձեզ գտնեն մոտակայքում, իսկ այցելուները դառնան հաճախորդներ։</span></li><li class="a" style="--k:2"><i></i><b>Խանութներ և էլեկտրոնային առևտուր</b><span>Ապրանքներ 3D-ով, պարզ պատվիրում և անվտանգ վճարում։</span></li><li class="a" style="--k:3"><i></i><b>Խոշոր մանրածախ ցանցեր և բրենդներ</b><span>Ուժեղ բրենդային աշխարհներ բազմաթիվ ապրանքների և շուկաների համար։</span></li><li class="a" style="--k:4"><i></i><b>Միջազգային և անդրազգային խմբեր</b><span>Բազմաթիվ լեզուներ և երկրներ՝ կառավարվող մեկ տեղից։</span></li></ol></div>
+    <ul class="sectors"><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16M6 11v7h12v-7M8 7c0-2 2-3 4-3s4 1 4 3"/></svg>Ռեստորաններ և սրճարաններ</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M10 20v-5h4v5"/></svg>Հյուրանոցներ և զբոսաշրջություն</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Առողջություն և բժշկություն</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z"/></svg>Գեղեցկություն և ինքնախնամք</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10h-5v-6H9v6z"/></svg>Անշարժ գույք</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M5 8h14M7 8l-3 6h6zM17 8l-3 6h6z"/></svg>Իրավունք և ֆինանսներ</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l5 3V9l5 3V5h6v15z"/></svg>Արդյունաբերություն և արտադրություն</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-4 9 4-9 4zM7 11v5c3 2 7 2 10 0v-5"/></svg>Կրթություն</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10l3 6-8 10L4 10z"/></svg>Նորաձևություն և զարդեր</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6-9 9H5v-6z"/></svg>Արհեստներ</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg>Տեխնոլոգիաներ և ծրագրեր</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.4 5 5.6.8-4 3.9.9 5.5L12 16.6 7.1 19.2l.9-5.5-4-3.9L9.6 9z"/></svg>Մշակույթ և միջոցառումներ</li></ul></div></section>
+<section class="pg pg-langs" id="langs" data-i="9" aria-labelledby="h-langs"><div class="inner"><div class="box"><p class="kicker a">Բազմալեզու</p><h2 class="h" id="h-langs">Առանց լեզվական խոչընդոտների՝ գլոբալ հասանելիություն տեղական զգացողությամբ</h2><p class="lead a">Ձեր կայքը կարող է խոսել ցանկացած կենդանի լեզվով։ Այն ճանաչում է յուրաքանչյուր այցելուի լեզուն և գտնվելու վայրը և ցույց է տալիս բովանդակությունն իր լեզվով, իսկ լեզուն կարելի է ձեռքով փոխել ցանկացած պահի։</p>
+    <ul class="ticks"><li class="a">Ցանկացած կենդանի լեզու</li><li class="a">Լեզվի և վայրի խելացի ճանաչում</li><li class="a">Լեզվի ձեռքով փոփոխություն</li><li class="a">Աջից ձախ և ձախից աջ</li></ul></div><div class="room"></div></div></section>
+<section class="pg pg-social" id="social" data-i="10" aria-labelledby="h-social"><div class="inner"><div class="box"><p class="kicker a">Սոցիալական ցանցեր</p><h2 class="h" id="h-social">Ձեր սոցիալական ցանցերը՝ կապված ձեր կայքի հետ</h2><p class="sub a">Հրապարակեք մեկ անգամ՝ երևացեք ձեր թվային աշխարհի ամենուր։</p><p class="lead a">Instagram-ի, Facebook-ի, YouTube-ի, TikTok-ի, LinkedIn-ի, Pinterest-ի, Threads-ի, X-ի և Telegram-ի բովանդակությունն ինքնաշխատ դառնում է ձեր կայքի առանձին էջեր՝ յուրաքանչյուրն իր URL-ով, պատկերներով և տեսանյութով, նկարագրությամբ, թարգմանություններով և SEO-ով։</p><p class="note a">Կախված է յուրաքանչյուր հարթակի պաշտոնական հասանելիության հնարավորություններից։</p></div><div class="room"></div></div></section>
+<section class="pg pg-booking" id="booking" data-i="11" aria-labelledby="h-booking"><div class="inner"><div class="box"><p class="kicker a">Առցանց ամրագրում</p><h2 class="h" id="h-booking">Ամրագրումների կառավարման ձեր սեփական հավելվածը</h2><p class="lead a">Յուրաքանչյուր ամրագրման մասին անմիջապես ծանուցում ստացեք հեռախոսին։ Կառավարեք ժամերը, ծանուցումները և ամրագրումները մեկ առանձին օրացույցում։</p>
+    <ul class="ticks"><li class="a">Անմիջական ծանուցում յուրաքանչյուր ամրագրման մասին</li><li class="a">Առանձին օրացույց</li><li class="a">Ժամեր և հիշեցումներ մեկ տեղում</li></ul></div>
+    <div class="phonemock a" aria-hidden="true"><div class="ph">
+      <div class="island"></div>
+      <div class="clock">14:28</div>
+      <div class="notif"><span class="app"><i></i>Ամրագրում</span><span class="now">հիմա</span><b>Նոր ամրագրում</b><span class="body">երք, 14:30 · 60 րոպե</span></div>
+      <div class="cal"><div class="ct">Այս շաբաթ</div><div class="cg"><span class="dh">Ե</span><span class="dh">Ե</span><span class="dh">Չ</span><span class="dh">Հ</span><span class="dh">Ո</span><span class="dh">Շ</span><span class="dh">Կ</span>
+        <i class="ev" style="--d:0;--r:2;--h:2"></i><i class="ev" style="--d:1;--r:0;--h:1"></i><i class="ev new" style="--d:1;--r:4;--h:2">Զբաղված</i><i class="ev" style="--d:2;--r:1;--h:3"></i><i class="ev" style="--d:3;--r:3;--h:1"></i><i class="ev" style="--d:4;--r:0;--h:2"></i><i class="ev" style="--d:4;--r:3;--h:2"></i><i class="ev" style="--d:5;--r:1;--h:1"></i></div></div>
+    </div></div></div></section>
+<section class="pg pg-mail" id="mail" data-i="12" aria-labelledby="h-mail"><div class="inner"><div class="box"><p class="kicker a">Բիզնես էլ. փոստ</p><h2 class="h" id="h-mail">Առանձին էլ. հասցե ձեր բիզնեսի յուրաքանչյուր ուղղության համար</h2><p class="lead a">Պրոֆեսիոնալ հասցեներ ձեր սեփական դոմենում՝ կապված Gmail-ի, Outlook-ի կամ ձեր արդեն օգտագործած ծառայության հետ։</p></div>
+    <ul class="mails panel a"><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">ceo@yourbrand.ch</bdi><span class="role">Ղեկավարություն</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">contact@yourbrand.ch</bdi><span class="role">Հաճախորդների հետ կապ</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">sales@yourbrand.ch</bdi><span class="role">Վաճառք</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">booking@yourbrand.ch</bdi><span class="role">Ամրագրումներ և հանդիպումներ</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">support@yourbrand.ch</bdi><span class="role">Աջակցություն</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">info@yourbrand.ch</bdi><span class="role">Ընդհանուր տեղեկություն</span></li></ul></div></section>
+<section class="pg pg-work" id="work" data-i="13" aria-labelledby="h-work"><div class="inner"><div class="box"><p class="kicker a">Աշխատանքներ</p><h2 class="h" id="h-work">3D և 2D աշխատանքներ</h2><p class="lead a">Կոնցեպտուալ դիզայններ, որոնք ստեղծվել են մեր ոճը ցույց տալու համար։ Այս օրինակներում ցույց ենք տալիս միայն պատկերներ և տեսանյութ։</p></div>
+    <div class="works"><button class="wcard a k3d" type="button" data-work="tattoo"><span class="th"><img src="/work/tattoo.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Դաջվածքի ստուդիա</b><span class="tags"><em>3D</em><em class="demo">Դեմո / կոնցեպտ</em></span><span class="wd">Տիտանե 3D գանգ, որը ոլորելիս շարժվում է էջով՝ կինեմատոգրաֆիկ ծխի մեջ։</span></span></button><button class="wcard a k3d" type="button" data-work="nail"><span class="th"><img src="/work/nail.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Եղունգների ստուդիա</b><span class="tags"><em>3D</em><em class="demo">Դեմո / կոնցեպտ</em></span><span class="wd">Հաստ ապակուց 3D լաքի շշեր, որոնք լողում են ոլորման հակառակ ուղղությամբ՝ սպիտակ և պաստելային թեմայում։</span></span></button><button class="wcard a k2d" type="button" data-work="alpine"><span class="th"><img src="/work/alpine.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Լեռնային ուղեկցորդ</b><span class="tags"><em>2D</em><em class="demo">Դեմո / կոնցեպտ</em></span><span class="wd">Պատրաստի ձևանմուշի վրա ստեղծված 2D կայք՝ բրենդի գույներով, տեքստերով և պատկերներով։</span></span></button><button class="wcard a k2d" type="button" data-work="atelier"><span class="th"><img src="/work/atelier.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Արհեստանոց</b><span class="tags"><em>2D</em><em class="demo">Դեմո / կոնցեպտ</em></span><span class="wd">Պատրաստի ձևանմուշի վրա ստեղծված 2D կայք՝ փոքր արհեստանոցի և խանութի համար։</span></span></button></div></div></section>
+<section class="pg pg-news" id="news" data-i="14" aria-labelledby="h-news"><div class="inner"><div class="box"><p class="kicker a">Նորություններ</p><h2 class="h" id="h-news">Նորույթներ տեխնոլոգիաներում՝ ամեն օր</h2><p class="lead a">Տեխնոլոգիաների և վեբի ամենակարևոր նորությունների կարճ ամենօրյա ընտրանի՝ յուրաքանչյուրը սկզբնաղբյուրի հղումով։</p><p class="a"><a class="btn ghost" href="/news/">Բոլոր նորությունները</a></p></div>
+    <ul class="newslist a" data-news aria-live="polite"><li class="ph"></li><li class="ph"></li><li class="ph"></li><li class="ph"></li></ul></div></section>
+<section class="pg pg-contact" id="contact" data-i="15" aria-labelledby="h-contact"><div class="inner">
+  <div class="box">
+    <p class="kicker a">Կապ</p><h2 class="h" id="h-contact">Եկեք խոսենք ձեր նախագծի մասին։</h2><p class="lead a">Գրեք մեզ, զրուցեք մեզ հետ կամ ուղարկեք նախագծի հայտ․ սովորաբար պատասխանում ենք մեկ աշխատանքային օրվա ընթացքում։</p>
+    <ul class="cways">
+      <li class="a"><span class="ci ci-mail" aria-hidden="true"></span><small>Էլ. փոստ</small><a href="mailto:contact@worldstudio.ch" dir="ltr">contact@worldstudio.ch</a></li>
+      <li class="a"><span class="ci ci-chat" aria-hidden="true"></span><small>Ուղիղ զրույց</small><button type="button" class="linkbtn" data-chat>Բացել զրույցը</button></li>
+    </ul>
+    <ul class="offers mini"><li class="a d3"><span class="dot"></span><b>Ինտերակտիվ 3D փորձառություններ</b><em>1 999 CHF-ից</em></li><li class="a d2"><span class="dot"></span><b>Վիզուալ 2D փորձառություններ</b><em>499 CHF-ից</em></li></ul>
+    <p class="foot a">© 2026 World Studio · Երկրի և երկնքի պատկերներ՝ NASA</p>
+  </div>
+  <form class="cform panel a" novalidate data-form>
+  <div class="fh"><h3>Նախագծի հայտ</h3><p>Թողեք ձեր տվյալները, և մենք կկապվենք ձեզ հետ՝ նախագիծը սկսելու համար։</p></div>
+  <div class="row2">
+    <label class="f"><span>Անուն</span><input name="first_name" required maxlength="80" autocomplete="given-name"></label>
+    <label class="f"><span>Ազգանուն</span><input name="last_name" required maxlength="80" autocomplete="family-name"></label>
+  </div>
+  <div class="row2">
+    <label class="f"><span>Բջջային հեռախոս</span><input name="phone" type="tel" inputmode="tel" required maxlength="30" pattern="[0-9 +()\-]{6,30}" autocomplete="tel" dir="ltr"></label>
+    <label class="f"><span>Էլ. փոստ</span><input name="email" type="email" required maxlength="160" autocomplete="email" dir="ltr"></label>
+  </div>
+  <fieldset class="types"><legend>Նախագծի տեսակը</legend><label class="tchip"><input type="radio" name="project_type" value="3d"><span>3D</span></label><label class="tchip"><input type="radio" name="project_type" value="2d"><span>2D</span></label><label class="tchip"><input type="radio" name="project_type" value="unsure"><span>Դեռ չգիտեմ</span></label></fieldset>
+  <label class="f"><span>Նախագծի մասին</span><textarea name="message" rows="3" required minlength="10" maxlength="4000" placeholder="օր.՝ 3D կայք ոսկերչական խանութի համար, երեք լեզվով"></textarea></label>
+  <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="send"><button type="submit" class="btn primary">Ուղարկել հայտը և սկսել</button><p class="privacy">Ձեր տվյալներն օգտագործում ենք միայն այս հայտին պատասխանելու համար։</p></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+<div class="layer" id="geo" aria-hidden="true"></div>
+<div class="layer" id="orbit" aria-hidden="true"></div>
+<nav class="pager" aria-label="Բոլոր էջերը">
+  <button class="iconbtn" id="prev" type="button" aria-label="Նախորդ էջ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6l-6 6 6 6"/></svg></button>
+  <div class="count" aria-live="polite"></div>
+  <button class="iconbtn" id="next" type="button" aria-label="Հաջորդ էջ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></button>
+</nav>
+<dialog id="menu"><div class="mw"><ol></ol></div><button class="iconbtn x" type="button" aria-label="Փակել"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
+<dialog id="langdlg"><div class="mw"><h2>Ընտրեք լեզուն</h2><ul></ul></div><button class="iconbtn x" type="button" aria-label="Փակել"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
+<dialog id="lightbox"><div class="lw"><div class="lh"><div></div><button class="iconbtn x" type="button" aria-label="Փակել"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="stage"></div><div class="thumbs"></div></div></dialog>
+<div id="loader" aria-hidden="true"><div class="lw"><div class="lt"><span style="--k:0">W</span><span style="--k:1">O</span><span style="--k:2">R</span><span style="--k:3">L</span><span style="--k:4">D</span><span style="--k:0">&nbsp;</span><span style="--k:6">S</span><span style="--k:7">T</span><span style="--k:8">U</span><span style="--k:9">D</span><span style="--k:10">I</span><span style="--k:11">O</span></div><div class="lb"><i></i></div><div class="ls"></div></div></div>
+<script type="module" src="/js/app.js?v=mwkwgydy"></script>
+</body>
+</html>

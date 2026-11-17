@@ -2,34 +2,77 @@
 <html lang="de" dir="ltr">
 <head>
 <meta charset="utf-8">
+<script>(function(){try{if(/bot|crawl|spider|slurp|lighthouse|facebookexternalhit|embedly|preview/i.test(navigator.userAgent))return;var CODES=["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh","ja","ko"];function pickLang(list) {   // best match for a list of BCP-47 tags
+  for (const raw of list) {
+    const t = String(raw || '').toLowerCase();
+    const exact = CODES.find((c) => c.toLowerCase() === t);
+    if (exact) return exact;
+    const base = t.split('-')[0];
+    if (base === 'es') { if (/-(mx|us|gt|hn|sv|ni|cr|pa|cu|do|pr|co|ve|ec|pe|bo|cl|py)$/.test(t)) return t.endsWith('-mx') ? 'es-MX' : 'es-MX'; if (/-(ar|uy)$/.test(t)) return 'es-AR'; return 'es'; }
+    if (base === 'pt') return 'pt-BR';
+    if (base === 'nb' || base === 'no' || base === 'nn') return 'da';
+    if (base === 'iw') return 'he';
+    const b = CODES.find((c) => c.toLowerCase() === base);
+    if (b) return b;
+  }
+  return null;
+}
+var q=new URLSearchParams(location.search).get('lang'),s=null;try{s=localStorage.getItem('ws-lang')}catch(e){}
+var l=(q&&CODES.indexOf(q)>-1)?q:(s&&CODES.indexOf(s)>-1)?s:pickLang(navigator.languages||[navigator.language]);
+if(l&&l!=='de'){window.__wsGo=1;location.replace('/'+l.toLowerCase()+'/'+location.hash)}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>World Studio — Interaktives 3D- und 2D-Webdesign</title>
 <meta name="description" content="World Studio: interaktive 3D-Websites und Apps ab CHF 1’999, 2D-Websites ab CHF 499. Schweiz.">
 <link rel="canonical" href="https://worldstudio.ch/">
+<link rel="alternate" hreflang="de" href="https://worldstudio.ch/">
+<link rel="alternate" hreflang="fr" href="https://worldstudio.ch/fr/">
+<link rel="alternate" hreflang="it" href="https://worldstudio.ch/it/">
+<link rel="alternate" hreflang="en" href="https://worldstudio.ch/en/">
+<link rel="alternate" hreflang="es" href="https://worldstudio.ch/es/">
+<link rel="alternate" hreflang="es-MX" href="https://worldstudio.ch/es-mx/">
+<link rel="alternate" hreflang="es-AR" href="https://worldstudio.ch/es-ar/">
+<link rel="alternate" hreflang="pt-BR" href="https://worldstudio.ch/pt-br/">
+<link rel="alternate" hreflang="sv" href="https://worldstudio.ch/sv/">
+<link rel="alternate" hreflang="da" href="https://worldstudio.ch/da/">
+<link rel="alternate" hreflang="fi" href="https://worldstudio.ch/fi/">
+<link rel="alternate" hreflang="tr" href="https://worldstudio.ch/tr/">
+<link rel="alternate" hreflang="ru" href="https://worldstudio.ch/ru/">
+<link rel="alternate" hreflang="hy" href="https://worldstudio.ch/hy/">
+<link rel="alternate" hreflang="ka" href="https://worldstudio.ch/ka/">
+<link rel="alternate" hreflang="az" href="https://worldstudio.ch/az/">
+<link rel="alternate" hreflang="he" href="https://worldstudio.ch/he/">
+<link rel="alternate" hreflang="ar" href="https://worldstudio.ch/ar/">
+<link rel="alternate" hreflang="fa" href="https://worldstudio.ch/fa/">
+<link rel="alternate" hreflang="hi" href="https://worldstudio.ch/hi/">
+<link rel="alternate" hreflang="zh-CN" href="https://worldstudio.ch/zh/">
+<link rel="alternate" hreflang="ja" href="https://worldstudio.ch/ja/">
+<link rel="alternate" hreflang="ko" href="https://worldstudio.ch/ko/">
+<link rel="alternate" hreflang="x-default" href="https://worldstudio.ch/">
 <meta name="theme-color" content="#000000">
 <meta property="og:site_name" content="World Studio">
 <meta property="og:title" content="World Studio — Interaktives 3D- und 2D-Webdesign">
 <meta property="og:description" content="World Studio: interaktive 3D-Websites und Apps ab CHF 1’999, 2D-Websites ab CHF 499. Schweiz.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://worldstudio.ch/">
+<meta property="og:locale" content="de_CH">
 <meta property="og:image" content="https://worldstudio.ch/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/site.css?v=mwkqznbh">
-<link rel="modulepreload" href="js/app.js?v=mwkqznbh">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"World Studio","url":"https://worldstudio.ch/","areaServed":"CH","description":"World Studio: interaktive 3D-Websites und Apps ab CHF 1’999, 2D-Websites ab CHF 499. Schweiz."}</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=mwkwgydy">
+<link rel="modulepreload" href="/js/app.js?v=mwkwgydy">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://worldstudio.ch/#org","name":"World Studio","url":"https://worldstudio.ch/","logo":"https://worldstudio.ch/favicon.svg","image":"https://worldstudio.ch/img/og.jpg","email":"contact@worldstudio.ch","address":{"@type":"PostalAddress","addressCountry":"CH"},"areaServed":["CH","Worldwide"],"knowsLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"],"description":"World Studio: interaktive 3D-Websites und Apps ab CHF 1’999, 2D-Websites ab CHF 499. Schweiz."},{"@type":"WebSite","@id":"https://worldstudio.ch/#site","url":"https://worldstudio.ch/","name":"World Studio","publisher":{"@id":"https://worldstudio.ch/#org"},"inLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"]},{"@type":"WebPage","@id":"https://worldstudio.ch/#page","url":"https://worldstudio.ch/","name":"World Studio — Interaktives 3D- und 2D-Webdesign","description":"World Studio: interaktive 3D-Websites und Apps ab CHF 1’999, 2D-Websites ab CHF 499. Schweiz.","inLanguage":"de","isPartOf":{"@id":"https://worldstudio.ch/#site"},"about":{"@id":"https://worldstudio.ch/#org"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#deck">Zum Inhalt</a>
 <canvas id="gl" aria-hidden="true"></canvas>
-<picture><source media="(max-aspect-ratio:1/1),(max-width:760px)" srcset="tex/poster_m.jpg"><img id="poster" src="tex/poster_d.jpg" alt="" fetchpriority="high"></picture>
+<picture><source media="(max-aspect-ratio:1/1),(max-width:760px)" srcset="/tex/poster_m.jpg"><img id="poster" src="/tex/poster_d.jpg" alt="" fetchpriority="high"></picture>
 <div class="fx vignette"></div><div class="fx shade"></div>
 <header class="top">
   <a class="brand" href="#" data-go="0"><span class="mark"></span><span>WORLD STUDIO</span></a>
   <div class="tools-r">
     <button class="hbtn" id="langbtn" type="button" aria-label="Sprache"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.4 5.3 3.4 8.5s-1 6.1-3.4 8.5M12 3.5C9.6 5.9 8.6 8.8 8.6 12s1 6.1 3.4 8.5"/></svg><span>DE</span></button>
-    <a class="hbtn" id="authbtn" href="app/#login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.4 4-5 7.2-5s5.9 1.6 7.2 5"/></svg><span>Anmelden / Registrieren</span></a>
+    <a class="hbtn" id="authbtn" href="/app/#login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.4 4-5 7.2-5s5.9 1.6 7.2 5"/></svg><span>Anmelden / Registrieren</span></a>
     <a class="hbtn solid" id="startbtn" href="#start" data-go="1">Projekt starten</a>
     <button class="iconbtn" id="menubtn" type="button" aria-label="Alle Seiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
   </div>
@@ -39,7 +82,7 @@
   <div class="box">
     <h1 class="wordmark" id="h-hero" aria-label="World Studio"><span class="wl" aria-hidden="true">WORLD</span><span class="wl" aria-hidden="true">STUDIO</span></h1>
     <p class="hero-sub a">Eine andere Welt aus interaktiven 3D-Websites und Apps</p>
-    <div class="ctas a"><a class="btn primary" href="#start" data-go="1">Projekt starten</a><a class="btn ghost" href="app/" data-auth>Anmelden / Registrieren</a></div>
+    <div class="ctas a"><a class="btn primary" href="#start" data-go="1">Projekt starten</a><a class="btn ghost" href="/app/" data-auth>Anmelden / Registrieren</a></div>
   </div>
   <p class="hint a"><i></i>Scrollen oder wischen, um weiterzugehen</p>
 </div></section>
@@ -73,8 +116,8 @@
     <ol class="steps"><li class="a"><small>01</small>Stellt das Produkt vor</li><li class="a"><small>02</small>Vermittelt seinen Wert</li><li class="a"><small>03</small>Schafft Vertrauen</li><li class="a"><small>04</small>Macht die Marke unvergesslich</li></ol></div></div></section>
 <section class="pg pg-screens" id="screens" data-i="5" aria-labelledby="h-screens"><div class="inner"><div class="box"><p class="kicker a">Responsive</p><h2 class="h" id="h-screens">Ein makelloses Erlebnis auf jedem Bildschirm</h2><p class="lead a">Ihre Website hat auf Smartphone, Tablet, Laptop und grossen Displays dieselbe Qualität. Layout, Text und Bewegung werden für jede Grösse abgestimmt – nicht einfach verkleinert.</p></div>
     <div class="devices a" aria-hidden="true">
-      <figure class="laptop"><div class="lid"><div class="scr"><img src="img/site-desktop.webp" alt="" loading="lazy" decoding="async" width="1600" height="1000"></div></div><div class="base"></div><figcaption>Desktop</figcaption></figure>
-      <figure class="phone"><div class="scr"><img src="img/site-mobile.webp" alt="" loading="lazy" decoding="async" width="430" height="932"></div><figcaption>Mobil</figcaption></figure>
+      <figure class="laptop"><div class="lid"><div class="scr"><img src="/img/site-desktop.webp" alt="" loading="lazy" decoding="async" width="1600" height="1000"></div></div><div class="base"></div><figcaption>Desktop</figcaption></figure>
+      <figure class="phone"><div class="scr"><img src="/img/site-mobile.webp" alt="" loading="lazy" decoding="async" width="430" height="932"></div><figcaption>Mobil</figcaption></figure>
     </div></div></section>
 <section class="pg pg-dims" id="dims" data-i="6" aria-labelledby="h-dims"><div class="inner"><div class="box"><p class="kicker a">2D, Motion, 3D</p><h2 class="h" id="h-dims">Der Unterschied zwischen 2D-Design, Motion Graphics und interaktivem 3D</h2></div>
     <div class="cards3"><article class="dcard panel a d1">
@@ -105,12 +148,12 @@
 <section class="pg pg-mail" id="mail" data-i="12" aria-labelledby="h-mail"><div class="inner"><div class="box"><p class="kicker a">E-Mail-Adressen</p><h2 class="h" id="h-mail">Eigene E-Mail-Adressen für jeden Bereich Ihres Unternehmens</h2><p class="lead a">Professionelle Adressen auf Ihrer eigenen Domain – verbunden mit Gmail, Outlook oder dem Dienst, den Sie heute nutzen.</p></div>
     <ul class="mails panel a"><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">ceo@yourbrand.ch</bdi><span class="role">Geschäftsleitung</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">contact@yourbrand.ch</bdi><span class="role">Kundenkontakt</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">sales@yourbrand.ch</bdi><span class="role">Verkauf</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">booking@yourbrand.ch</bdi><span class="role">Buchungen und Termine</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">support@yourbrand.ch</bdi><span class="role">Support</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">info@yourbrand.ch</bdi><span class="role">Allgemeine Informationen</span></li></ul></div></section>
 <section class="pg pg-work" id="work" data-i="13" aria-labelledby="h-work"><div class="inner"><div class="box"><p class="kicker a">Arbeiten</p><h2 class="h" id="h-work">Arbeiten in 3D und 2D</h2><p class="lead a">Konzeptentwürfe, die unseren Stil zeigen. Von diesen Beispielen zeigen wir nur Bilder und Videos.</p></div>
-    <div class="works"><button class="wcard a k3d" type="button" data-work="tattoo"><span class="th"><img src="work/tattoo.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
-      <span class="wt"><b>Tattoo-Studio</b><span class="tags"><em>3D</em><em class="demo">Demo / Konzept</em></span><span class="wd">Ein 3D-Schädel aus Titan, der sich beim Scrollen durch die Seite bewegt – in filmischem Rauch.</span></span></button><button class="wcard a k3d" type="button" data-work="nail"><span class="th"><img src="work/nail.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
-      <span class="wt"><b>Nagelstudio</b><span class="tags"><em>3D</em><em class="demo">Demo / Konzept</em></span><span class="wd">3D-Lackflaschen aus dickem Glas, die gegen das Scrollen schweben – in Weiss und Pastell.</span></span></button><button class="wcard a k2d" type="button" data-work="alpine"><span class="th"><img src="work/alpine.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
-      <span class="wt"><b>Bergführer</b><span class="tags"><em>2D</em><em class="demo">Demo / Konzept</em></span><span class="wd">Eine 2D-Website auf Basis einer fertigen Vorlage, mit Farben, Texten und Bildern der Marke.</span></span></button><button class="wcard a k2d" type="button" data-work="atelier"><span class="th"><img src="work/atelier.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+    <div class="works"><button class="wcard a k3d" type="button" data-work="tattoo"><span class="th"><img src="/work/tattoo.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Tattoo-Studio</b><span class="tags"><em>3D</em><em class="demo">Demo / Konzept</em></span><span class="wd">Ein 3D-Schädel aus Titan, der sich beim Scrollen durch die Seite bewegt – in filmischem Rauch.</span></span></button><button class="wcard a k3d" type="button" data-work="nail"><span class="th"><img src="/work/nail.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Nagelstudio</b><span class="tags"><em>3D</em><em class="demo">Demo / Konzept</em></span><span class="wd">3D-Lackflaschen aus dickem Glas, die gegen das Scrollen schweben – in Weiss und Pastell.</span></span></button><button class="wcard a k2d" type="button" data-work="alpine"><span class="th"><img src="/work/alpine.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Bergführer</b><span class="tags"><em>2D</em><em class="demo">Demo / Konzept</em></span><span class="wd">Eine 2D-Website auf Basis einer fertigen Vorlage, mit Farben, Texten und Bildern der Marke.</span></span></button><button class="wcard a k2d" type="button" data-work="atelier"><span class="th"><img src="/work/atelier.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
       <span class="wt"><b>Handwerks-Atelier</b><span class="tags"><em>2D</em><em class="demo">Demo / Konzept</em></span><span class="wd">Eine 2D-Website auf Basis einer fertigen Vorlage, für eine kleine Werkstatt mit Laden.</span></span></button></div></div></section>
-<section class="pg pg-news" id="news" data-i="14" aria-labelledby="h-news"><div class="inner"><div class="box"><p class="kicker a">News</p><h2 class="h" id="h-news">Neu in der Technologie – jeden Tag</h2><p class="lead a">Eine kurze tägliche Auswahl der wichtigsten Nachrichten aus Technologie und Web, jeweils mit Link zur Originalquelle.</p><p class="a"><a class="btn ghost" href="news/">Alle News</a></p></div>
+<section class="pg pg-news" id="news" data-i="14" aria-labelledby="h-news"><div class="inner"><div class="box"><p class="kicker a">News</p><h2 class="h" id="h-news">Neu in der Technologie – jeden Tag</h2><p class="lead a">Eine kurze tägliche Auswahl der wichtigsten Nachrichten aus Technologie und Web, jeweils mit Link zur Originalquelle.</p><p class="a"><a class="btn ghost" href="/news/">Alle News</a></p></div>
     <ul class="newslist a" data-news aria-live="polite"><li class="ph"></li><li class="ph"></li><li class="ph"></li><li class="ph"></li></ul></div></section>
 <section class="pg pg-contact" id="contact" data-i="15" aria-labelledby="h-contact"><div class="inner">
   <div class="box">
@@ -142,7 +185,7 @@
 </main>
 <div class="layer" id="geo" aria-hidden="true"></div>
 <div class="layer" id="orbit" aria-hidden="true"></div>
-<nav class="pager" aria-label="Seiten">
+<nav class="pager" aria-label="Alle Seiten">
   <button class="iconbtn" id="prev" type="button" aria-label="Vorherige Seite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6l-6 6 6 6"/></svg></button>
   <div class="count" aria-live="polite"></div>
   <button class="iconbtn" id="next" type="button" aria-label="Nächste Seite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></button>
@@ -151,6 +194,6 @@
 <dialog id="langdlg"><div class="mw"><h2>Sprache wählen</h2><ul></ul></div><button class="iconbtn x" type="button" aria-label="Schliessen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
 <dialog id="lightbox"><div class="lw"><div class="lh"><div></div><button class="iconbtn x" type="button" aria-label="Schliessen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="stage"></div><div class="thumbs"></div></div></dialog>
 <div id="loader" aria-hidden="true"><div class="lw"><div class="lt"><span style="--k:0">W</span><span style="--k:1">O</span><span style="--k:2">R</span><span style="--k:3">L</span><span style="--k:4">D</span><span style="--k:0">&nbsp;</span><span style="--k:6">S</span><span style="--k:7">T</span><span style="--k:8">U</span><span style="--k:9">D</span><span style="--k:10">I</span><span style="--k:11">O</span></div><div class="lb"><i></i></div><div class="ls"></div></div></div>
-<script type="module" src="js/app.js?v=mwkqznbh"></script>
+<script type="module" src="/js/app.js?v=mwkwgydy"></script>
 </body>
 </html>

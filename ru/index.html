@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World Studio — интерактивный веб-дизайн в 3D и 2D</title>
+<meta name="description" content="World Studio: интерактивные 3D-сайты и приложения от 1 999 CHF, 2D-сайты от 499 CHF. Швейцария.">
+<link rel="canonical" href="https://worldstudio.ch/ru/">
+<link rel="alternate" hreflang="de" href="https://worldstudio.ch/">
+<link rel="alternate" hreflang="fr" href="https://worldstudio.ch/fr/">
+<link rel="alternate" hreflang="it" href="https://worldstudio.ch/it/">
+<link rel="alternate" hreflang="en" href="https://worldstudio.ch/en/">
+<link rel="alternate" hreflang="es" href="https://worldstudio.ch/es/">
+<link rel="alternate" hreflang="es-MX" href="https://worldstudio.ch/es-mx/">
+<link rel="alternate" hreflang="es-AR" href="https://worldstudio.ch/es-ar/">
+<link rel="alternate" hreflang="pt-BR" href="https://worldstudio.ch/pt-br/">
+<link rel="alternate" hreflang="sv" href="https://worldstudio.ch/sv/">
+<link rel="alternate" hreflang="da" href="https://worldstudio.ch/da/">
+<link rel="alternate" hreflang="fi" href="https://worldstudio.ch/fi/">
+<link rel="alternate" hreflang="tr" href="https://worldstudio.ch/tr/">
+<link rel="alternate" hreflang="ru" href="https://worldstudio.ch/ru/">
+<link rel="alternate" hreflang="hy" href="https://worldstudio.ch/hy/">
+<link rel="alternate" hreflang="ka" href="https://worldstudio.ch/ka/">
+<link rel="alternate" hreflang="az" href="https://worldstudio.ch/az/">
+<link rel="alternate" hreflang="he" href="https://worldstudio.ch/he/">
+<link rel="alternate" hreflang="ar" href="https://worldstudio.ch/ar/">
+<link rel="alternate" hreflang="fa" href="https://worldstudio.ch/fa/">
+<link rel="alternate" hreflang="hi" href="https://worldstudio.ch/hi/">
+<link rel="alternate" hreflang="zh-CN" href="https://worldstudio.ch/zh/">
+<link rel="alternate" hreflang="ja" href="https://worldstudio.ch/ja/">
+<link rel="alternate" hreflang="ko" href="https://worldstudio.ch/ko/">
+<link rel="alternate" hreflang="x-default" href="https://worldstudio.ch/">
+<meta name="theme-color" content="#000000">
+<meta property="og:site_name" content="World Studio">
+<meta property="og:title" content="World Studio — интерактивный веб-дизайн в 3D и 2D">
+<meta property="og:description" content="World Studio: интерактивные 3D-сайты и приложения от 1 999 CHF, 2D-сайты от 499 CHF. Швейцария.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://worldstudio.ch/ru/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://worldstudio.ch/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=mwkwgydy">
+<link rel="modulepreload" href="/js/app.js?v=mwkwgydy">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://worldstudio.ch/#org","name":"World Studio","url":"https://worldstudio.ch/","logo":"https://worldstudio.ch/favicon.svg","image":"https://worldstudio.ch/img/og.jpg","email":"contact@worldstudio.ch","address":{"@type":"PostalAddress","addressCountry":"CH"},"areaServed":["CH","Worldwide"],"knowsLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"],"description":"World Studio: интерактивные 3D-сайты и приложения от 1 999 CHF, 2D-сайты от 499 CHF. Швейцария."},{"@type":"WebSite","@id":"https://worldstudio.ch/#site","url":"https://worldstudio.ch/","name":"World Studio","publisher":{"@id":"https://worldstudio.ch/#org"},"inLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"]},{"@type":"WebPage","@id":"https://worldstudio.ch/ru/#page","url":"https://worldstudio.ch/ru/","name":"World Studio — интерактивный веб-дизайн в 3D и 2D","description":"World Studio: интерактивные 3D-сайты и приложения от 1 999 CHF, 2D-сайты от 499 CHF. Швейцария.","inLanguage":"ru","isPartOf":{"@id":"https://worldstudio.ch/#site"},"about":{"@id":"https://worldstudio.ch/#org"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#deck">Перейти к содержанию</a>
+<canvas id="gl" aria-hidden="true"></canvas>
+<picture><source media="(max-aspect-ratio:1/1),(max-width:760px)" srcset="/tex/poster_m.jpg"><img id="poster" src="/tex/poster_d.jpg" alt="" fetchpriority="high"></picture>
+<div class="fx vignette"></div><div class="fx shade"></div>
+<header class="top">
+  <a class="brand" href="#" data-go="0"><span class="mark"></span><span>WORLD STUDIO</span></a>
+  <div class="tools-r">
+    <button class="hbtn" id="langbtn" type="button" aria-label="Язык"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.4 5.3 3.4 8.5s-1 6.1-3.4 8.5M12 3.5C9.6 5.9 8.6 8.8 8.6 12s1 6.1 3.4 8.5"/></svg><span>RU</span></button>
+    <a class="hbtn" id="authbtn" href="/app/#login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.4 4-5 7.2-5s5.9 1.6 7.2 5"/></svg><span>Вход / Регистрация</span></a>
+    <a class="hbtn solid" id="startbtn" href="#start" data-go="1">Начать проект</a>
+    <button class="iconbtn" id="menubtn" type="button" aria-label="Все страницы"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</header>
+<main id="deck">
+<section class="pg pg-hero" id="hero" data-i="0" aria-labelledby="h-hero"><div class="inner">
+  <div class="box">
+    <h1 class="wordmark" id="h-hero" aria-label="World Studio"><span class="wl" aria-hidden="true">WORLD</span><span class="wl" aria-hidden="true">STUDIO</span></h1>
+    <p class="hero-sub a">Другой мир интерактивных 3D-сайтов и приложений</p>
+    <div class="ctas a"><a class="btn primary" href="#start" data-go="1">Начать проект</a><a class="btn ghost" href="/app/" data-auth>Вход / Регистрация</a></div>
+  </div>
+  <p class="hint a"><i></i>Прокрутите или проведите, чтобы продолжить</p>
+</div></section>
+<section class="pg pg-start" id="start" data-i="1" aria-labelledby="h-start"><div class="inner">
+  <div class="box">
+    <p class="kicker a">Начать проект</p><h2 class="h" id="h-start">Превратите идею в впечатление, которое запомнится.</h2>
+    <ul class="offers"><li class="a d3"><span class="dot"></span><b>Интерактивные 3D-проекты</b><em>от 1 999 CHF</em></li><li class="a d2"><span class="dot"></span><b>Визуальные 2D-проекты</b><em>от 499 CHF</em></li></ul>
+  </div>
+  <form class="cform panel a" novalidate data-form>
+  <div class="fh"><h3>Заявка на проект</h3><p>Оставьте свои данные — мы свяжемся с вами и запустим ваш проект.</p></div>
+  <div class="row2">
+    <label class="f"><span>Имя</span><input name="first_name" required maxlength="80" autocomplete="given-name"></label>
+    <label class="f"><span>Фамилия</span><input name="last_name" required maxlength="80" autocomplete="family-name"></label>
+  </div>
+  <div class="row2">
+    <label class="f"><span>Мобильный телефон</span><input name="phone" type="tel" inputmode="tel" required maxlength="30" pattern="[0-9 +()\-]{6,30}" autocomplete="tel" dir="ltr"></label>
+    <label class="f"><span>Эл. почта</span><input name="email" type="email" required maxlength="160" autocomplete="email" dir="ltr"></label>
+  </div>
+  <fieldset class="types"><legend>Тип проекта</legend><label class="tchip"><input type="radio" name="project_type" value="3d"><span>3D</span></label><label class="tchip"><input type="radio" name="project_type" value="2d"><span>2D</span></label><label class="tchip"><input type="radio" name="project_type" value="unsure"><span>Пока не знаю</span></label></fieldset>
+  <label class="f"><span>О проекте</span><textarea name="message" rows="3" required minlength="10" maxlength="4000" placeholder="например, 3D-сайт для ювелирного магазина на трёх языках"></textarea></label>
+  <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="send"><button type="submit" class="btn primary">Отправить заявку и начать</button><p class="privacy">Мы используем ваши данные только для ответа на эту заявку.</p></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+<section class="pg pg-edge" id="edge" data-i="2" aria-labelledby="h-edge"><div class="inner"><div class="box"><p class="kicker a">Рынок сегодня</p><h2 class="h" id="h-edge">Выделиться — никогда не случайность.</h2><p class="lead a">Интернет и ИИ позволяют любому клиенту легко сравнить вас с конкурентами. Быть онлайн — уже не преимущество само по себе: выигрывает тот, кто отличается и запоминается.</p><p class="lead a">Почти у каждой компании есть страница в соцсетях и сайт. Настоящая разница появляется, когда сайт — часть вашей стратегии маркетинга и привлечения клиентов, а не просто витрина. Это работает и для стартапов, и для известных брендов — и укрепляет ваши позиции на рынке и продажи.</p></div></div></section>
+<section class="pg pg-approach" id="approach" data-i="3" aria-labelledby="h-approach"><div class="inner"><div class="box"><p class="kicker a">Наш подход</p><h2 class="h" id="h-approach">Мы не просто делаем сайты. Мы создаём цифровой мир вашего бренда.</h2><p class="lead a">Для нас дизайн — это больше, чем код и визуал. Всё начинается с понимания вашего бизнеса, и именно оно определяет структуру, повествование, визуальный стиль и то, как люди пользуются вашим сайтом.</p>
+    <ol class="chips"><li class="a"><small>01</small>Продукты и услуги</li><li class="a"><small>02</small>Целевой рынок</li><li class="a"><small>03</small>Поведение клиентов</li><li class="a"><small>04</small>Конкурентное преимущество</li></ol></div></div></section>
+<section class="pg pg-story" id="story" data-i="4" aria-labelledby="h-story"><div class="inner"><div class="box"><p class="kicker a">История бренда</p><h2 class="h" id="h-story">Мы превращаем ценности вашего бизнеса в историю со смыслом.</h2><p class="lead a">Мы рассказываем её через концептуальный дизайн, изображение, цвет, движение и интерактивные 3D-пространства.</p>
+    <div class="tools a" aria-hidden="true"><span>Концепция</span><i></i><span>Изображение</span><i></i><span>Цвет</span><i></i><span>Движение</span><i></i><span>3D-пространство</span></div>
+    <ol class="steps"><li class="a"><small>01</small>Представляет продукт</li><li class="a"><small>02</small>Передаёт его ценность</li><li class="a"><small>03</small>Вызывает доверие</li><li class="a"><small>04</small>Делает бренд запоминающимся</li></ol></div></div></section>
+<section class="pg pg-screens" id="screens" data-i="5" aria-labelledby="h-screens"><div class="inner"><div class="box"><p class="kicker a">Адаптивность</p><h2 class="h" id="h-screens">Безупречно на любом экране</h2><p class="lead a">Ваш сайт сохраняет то же качество на смартфонах, планшетах, ноутбуках и больших экранах. Вёрстка, текст и анимация настраиваются под каждый размер, а не просто уменьшаются.</p></div>
+    <div class="devices a" aria-hidden="true">
+      <figure class="laptop"><div class="lid"><div class="scr"><img src="/img/site-desktop.webp" alt="" loading="lazy" decoding="async" width="1600" height="1000"></div></div><div class="base"></div><figcaption>Компьютер</figcaption></figure>
+      <figure class="phone"><div class="scr"><img src="/img/site-mobile.webp" alt="" loading="lazy" decoding="async" width="430" height="932"></div><figcaption>Смартфон</figcaption></figure>
+    </div></div></section>
+<section class="pg pg-dims" id="dims" data-i="6" aria-labelledby="h-dims"><div class="inner"><div class="box"><p class="kicker a">2D, моушн, 3D</p><h2 class="h" id="h-dims">Чем отличаются 2D-дизайн, моушн-графика и интерактивное 3D</h2></div>
+    <div class="cards3"><article class="dcard panel a d1">
+      <div class="vis v1" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+      <div class="txt"><h3>2D веб-дизайн</h3><small lang="en">2D Web Design</small><p>Чистые и быстрые страницы с профессиональными изображениями, текстами и вёрсткой. Понятный и экономичный способ представить бизнес.</p></div></article><article class="dcard panel a d2">
+      <div class="vis v2" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i><i class="orb"></i></div>
+      <div class="txt"><h3>Моушн-графика</h3><small lang="en">Motion Graphics</small><p>Те же страницы, но в движении: текст и изображения оживают и направляют внимание — однако всё по-прежнему происходит на плоской поверхности.</p></div></article><article class="dcard panel a d3">
+      <div class="vis v3" data-gem title="Потяните, чтобы повернуть"><span class="drag">Потяните, чтобы повернуть</span></div>
+      <div class="txt"><h3>Наше интерактивное 3D</h3><small lang="en">Interactive 3D Web Design</small><p>Настоящее 3D-пространство, которое отрисовывается прямо в браузере. Посетители вращают продукт, перемещаются в пространстве и знакомятся с вашим брендом вблизи.</p></div></article></div>
+    <p class="closer a">Настоящая разница не в том, чтобы показать движение, а в том, чтобы создать настоящее 3D-пространство, с которым можно взаимодействовать и в котором оживает ваш бренд.</p></div></section>
+<section class="pg pg-service" id="service" data-i="7" aria-labelledby="h-service"><div class="inner"><div class="box"><p class="kicker a">Полный цикл</p><h2 class="h" id="h-service">От понимания вашего бизнеса до цифрового опыта, который выделяется</h2><p class="lead a">Всё в одной команде. Мы объединяем маркетинговую стратегию, разработку ПО и 3D-дизайн, чтобы ваш сайт работал на ваш бизнес.</p>
+    <ol class="svc"><li class="a"><small>01</small><b>Анализ и планирование</b><span>Анализ бизнеса со стратегическим и техническим планом</span></li><li class="a"><small>02</small><b>3D и анимация</b><span>3D-окружения, моделирование продуктов и кинематографичная анимация</span></li><li class="a"><small>03</small><b>Видимость в поиске</b><span>SEO и оптимизация для поиска с ИИ</span></li><li class="a"><small>04</small><b>Каналы для клиентов</b><span>Онлайн-запись, заказы и платёжные системы</span></li><li class="a"><small>05</small><b>Маркетинг + разработка</b><span>Маркетинговая стратегия в связке с разработкой ПО</span></li></ol></div></div></section>
+<section class="pg pg-biz" id="biz" data-i="8" aria-labelledby="h-biz"><div class="inner"><div class="box"><p class="kicker a">Для любого бизнеса</p><h2 class="h" id="h-biz">От стартапов до международных корпораций — сайт, который подходит именно вам.</h2><p class="lead a">Что бы вы ни продавали и каким бы ни был ваш масштаб, мы создадим сайт, который подходит вашему бизнесу сегодня и растёт вместе с ним завтра.</p>
+    <ol class="ladder"><li class="a" style="--k:0"><i></i><b>Стартапы и основатели</b><span>Выглядите солидно с первого дня и запускайтесь быстро.</span></li><li class="a" style="--k:1"><i></i><b>Малый и местный бизнес</b><span>Пусть вас находят рядом, а посетители становятся клиентами.</span></li><li class="a" style="--k:2"><i></i><b>Магазины и e-commerce</b><span>Товары в 3D, простое оформление заказа и безопасная оплата.</span></li><li class="a" style="--k:3"><i></i><b>Крупные сети и бренды</b><span>Сильные миры бренда для множества продуктов и рынков.</span></li><li class="a" style="--k:4"><i></i><b>Международные и транснациональные группы</b><span>Много языков и стран — управление в одном месте.</span></li></ol></div>
+    <ul class="sectors"><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16M6 11v7h12v-7M8 7c0-2 2-3 4-3s4 1 4 3"/></svg>Рестораны и кафе</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M10 20v-5h4v5"/></svg>Отели и туризм</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Здоровье и медицина</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z"/></svg>Красота и велнес</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10h-5v-6H9v6z"/></svg>Недвижимость</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M5 8h14M7 8l-3 6h6zM17 8l-3 6h6z"/></svg>Право и финансы</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l5 3V9l5 3V5h6v15z"/></svg>Промышленность и производство</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-4 9 4-9 4zM7 11v5c3 2 7 2 10 0v-5"/></svg>Образование</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10l3 6-8 10L4 10z"/></svg>Мода и ювелирные изделия</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6-9 9H5v-6z"/></svg>Ремёсла</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg>Технологии и ПО</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.4 5 5.6.8-4 3.9.9 5.5L12 16.6 7.1 19.2l.9-5.5-4-3.9L9.6 9z"/></svg>Культура и события</li></ul></div></section>
+<section class="pg pg-langs" id="langs" data-i="9" aria-labelledby="h-langs"><div class="inner"><div class="box"><p class="kicker a">Многоязычность</p><h2 class="h" id="h-langs">Без языковых барьеров — глобальный охват с местным колоритом</h2><p class="lead a">Ваш сайт может говорить на любом живом языке. Он определяет язык и местоположение каждого посетителя и показывает контент на его языке — а сменить язык вручную можно в любой момент.</p>
+    <ul class="ticks"><li class="a">Любой живой язык</li><li class="a">Умное определение языка и местоположения</li><li class="a">Ручная смена языка</li><li class="a">Справа налево и слева направо</li></ul></div><div class="room"></div></div></section>
+<section class="pg pg-social" id="social" data-i="10" aria-labelledby="h-social"><div class="inner"><div class="box"><p class="kicker a">Соцсети</p><h2 class="h" id="h-social">Ваши соцсети, связанные с сайтом</h2><p class="sub a">Публикуйте один раз — и появляйтесь везде в вашем цифровом мире.</p><p class="lead a">Контент из Instagram, Facebook, YouTube, TikTok, LinkedIn, Pinterest, Threads, X и Telegram автоматически превращается в отдельные страницы на вашем сайте — у каждой свой URL, изображения и видео, описание, переводы и SEO.</p><p class="note a">Зависит от официальных возможностей доступа каждой платформы.</p></div><div class="room"></div></div></section>
+<section class="pg pg-booking" id="booking" data-i="11" aria-labelledby="h-booking"><div class="inner"><div class="box"><p class="kicker a">Онлайн-запись</p><h2 class="h" id="h-booking">Собственное приложение для управления записями</h2><p class="lead a">Получайте мгновенное уведомление на телефон о каждой записи. Управляйте временем, уведомлениями и записями в отдельном календаре.</p>
+    <ul class="ticks"><li class="a">Мгновенное оповещение о каждой записи</li><li class="a">Отдельный календарь</li><li class="a">Время и напоминания в одном месте</li></ul></div>
+    <div class="phonemock a" aria-hidden="true"><div class="ph">
+      <div class="island"></div>
+      <div class="clock">14:28</div>
+      <div class="notif"><span class="app"><i></i>Запись</span><span class="now">сейчас</span><b>Новая запись</b><span class="body">вт, 14:30 · 60 мин</span></div>
+      <div class="cal"><div class="ct">Эта неделя</div><div class="cg"><span class="dh">П</span><span class="dh">В</span><span class="dh">С</span><span class="dh">Ч</span><span class="dh">П</span><span class="dh">С</span><span class="dh">В</span>
+        <i class="ev" style="--d:0;--r:2;--h:2"></i><i class="ev" style="--d:1;--r:0;--h:1"></i><i class="ev new" style="--d:1;--r:4;--h:2">Занято</i><i class="ev" style="--d:2;--r:1;--h:3"></i><i class="ev" style="--d:3;--r:3;--h:1"></i><i class="ev" style="--d:4;--r:0;--h:2"></i><i class="ev" style="--d:4;--r:3;--h:2"></i><i class="ev" style="--d:5;--r:1;--h:1"></i></div></div>
+    </div></div></div></section>
+<section class="pg pg-mail" id="mail" data-i="12" aria-labelledby="h-mail"><div class="inner"><div class="box"><p class="kicker a">Корпоративная почта</p><h2 class="h" id="h-mail">Отдельный адрес почты для каждого направления бизнеса</h2><p class="lead a">Профессиональные адреса на вашем домене, подключённые к Gmail, Outlook или сервису, которым вы уже пользуетесь.</p></div>
+    <ul class="mails panel a"><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">ceo@yourbrand.ch</bdi><span class="role">Руководство</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">contact@yourbrand.ch</bdi><span class="role">Работа с клиентами</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">sales@yourbrand.ch</bdi><span class="role">Продажи</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">booking@yourbrand.ch</bdi><span class="role">Записи и встречи</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">support@yourbrand.ch</bdi><span class="role">Поддержка</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">info@yourbrand.ch</bdi><span class="role">Общая информация</span></li></ul></div></section>
+<section class="pg pg-work" id="work" data-i="13" aria-labelledby="h-work"><div class="inner"><div class="box"><p class="kicker a">Работы</p><h2 class="h" id="h-work">Работы в 3D и 2D</h2><p class="lead a">Концепт-дизайны, созданные, чтобы показать наш стиль. Для этих примеров мы показываем только изображения и видео.</p></div>
+    <div class="works"><button class="wcard a k3d" type="button" data-work="tattoo"><span class="th"><img src="/work/tattoo.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Тату-студия</b><span class="tags"><em>3D</em><em class="demo">Демо / концепт</em></span><span class="wd">Титановый 3D-череп, который движется по странице при прокрутке, в кинематографичном дыму.</span></span></button><button class="wcard a k3d" type="button" data-work="nail"><span class="th"><img src="/work/nail.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Ногтевая студия</b><span class="tags"><em>3D</em><em class="demo">Демо / концепт</em></span><span class="wd">3D-флаконы лака из толстого стекла плывут навстречу прокрутке в бело-пастельной теме.</span></span></button><button class="wcard a k2d" type="button" data-work="alpine"><span class="th"><img src="/work/alpine.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Горный гид</b><span class="tags"><em>2D</em><em class="demo">Демо / концепт</em></span><span class="wd">2D-сайт на готовом шаблоне с фирменными цветами, текстами и изображениями.</span></span></button><button class="wcard a k2d" type="button" data-work="atelier"><span class="th"><img src="/work/atelier.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Ремесленная мастерская</b><span class="tags"><em>2D</em><em class="demo">Демо / концепт</em></span><span class="wd">2D-сайт на готовом шаблоне для небольшой мастерской с магазином.</span></span></button></div></div></section>
+<section class="pg pg-news" id="news" data-i="14" aria-labelledby="h-news"><div class="inner"><div class="box"><p class="kicker a">Новости</p><h2 class="h" id="h-news">Новое в технологиях — каждый день</h2><p class="lead a">Короткая ежедневная подборка главных новостей технологий и веба, у каждой — ссылка на первоисточник.</p><p class="a"><a class="btn ghost" href="/news/">Все новости</a></p></div>
+    <ul class="newslist a" data-news aria-live="polite"><li class="ph"></li><li class="ph"></li><li class="ph"></li><li class="ph"></li></ul></div></section>
+<section class="pg pg-contact" id="contact" data-i="15" aria-labelledby="h-contact"><div class="inner">
+  <div class="box">
+    <p class="kicker a">Контакты</p><h2 class="h" id="h-contact">Давайте обсудим ваш проект.</h2><p class="lead a">Напишите нам, свяжитесь в чате или отправьте заявку на проект — обычно мы отвечаем в течение одного рабочего дня.</p>
+    <ul class="cways">
+      <li class="a"><span class="ci ci-mail" aria-hidden="true"></span><small>Эл. почта</small><a href="mailto:contact@worldstudio.ch" dir="ltr">contact@worldstudio.ch</a></li>
+      <li class="a"><span class="ci ci-chat" aria-hidden="true"></span><small>Онлайн-чат</small><button type="button" class="linkbtn" data-chat>Открыть чат</button></li>
+    </ul>
+    <ul class="offers mini"><li class="a d3"><span class="dot"></span><b>Интерактивные 3D-проекты</b><em>от 1 999 CHF</em></li><li class="a d2"><span class="dot"></span><b>Визуальные 2D-проекты</b><em>от 499 CHF</em></li></ul>
+    <p class="foot a">© 2026 World Studio · Изображения Земли и неба: NASA</p>
+  </div>
+  <form class="cform panel a" novalidate data-form>
+  <div class="fh"><h3>Заявка на проект</h3><p>Оставьте свои данные — мы свяжемся с вами и запустим ваш проект.</p></div>
+  <div class="row2">
+    <label class="f"><span>Имя</span><input name="first_name" required maxlength="80" autocomplete="given-name"></label>
+    <label class="f"><span>Фамилия</span><input name="last_name" required maxlength="80" autocomplete="family-name"></label>
+  </div>
+  <div class="row2">
+    <label class="f"><span>Мобильный телефон</span><input name="phone" type="tel" inputmode="tel" required maxlength="30" pattern="[0-9 +()\-]{6,30}" autocomplete="tel" dir="ltr"></label>
+    <label class="f"><span>Эл. почта</span><input name="email" type="email" required maxlength="160" autocomplete="email" dir="ltr"></label>
+  </div>
+  <fieldset class="types"><legend>Тип проекта</legend><label class="tchip"><input type="radio" name="project_type" value="3d"><span>3D</span></label><label class="tchip"><input type="radio" name="project_type" value="2d"><span>2D</span></label><label class="tchip"><input type="radio" name="project_type" value="unsure"><span>Пока не знаю</span></label></fieldset>
+  <label class="f"><span>О проекте</span><textarea name="message" rows="3" required minlength="10" maxlength="4000" placeholder="например, 3D-сайт для ювелирного магазина на трёх языках"></textarea></label>
+  <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="send"><button type="submit" class="btn primary">Отправить заявку и начать</button><p class="privacy">Мы используем ваши данные только для ответа на эту заявку.</p></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+<div class="layer" id="geo" aria-hidden="true"></div>
+<div class="layer" id="orbit" aria-hidden="true"></div>
+<nav class="pager" aria-label="Все страницы">
+  <button class="iconbtn" id="prev" type="button" aria-label="Предыдущая страница"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6l-6 6 6 6"/></svg></button>
+  <div class="count" aria-live="polite"></div>
+  <button class="iconbtn" id="next" type="button" aria-label="Следующая страница"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></button>
+</nav>
+<dialog id="menu"><div class="mw"><ol></ol></div><button class="iconbtn x" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
+<dialog id="langdlg"><div class="mw"><h2>Выберите язык</h2><ul></ul></div><button class="iconbtn x" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
+<dialog id="lightbox"><div class="lw"><div class="lh"><div></div><button class="iconbtn x" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="stage"></div><div class="thumbs"></div></div></dialog>
+<div id="loader" aria-hidden="true"><div class="lw"><div class="lt"><span style="--k:0">W</span><span style="--k:1">O</span><span style="--k:2">R</span><span style="--k:3">L</span><span style="--k:4">D</span><span style="--k:0">&nbsp;</span><span style="--k:6">S</span><span style="--k:7">T</span><span style="--k:8">U</span><span style="--k:9">D</span><span style="--k:10">I</span><span style="--k:11">O</span></div><div class="lb"><i></i></div><div class="ls"></div></div></div>
+<script type="module" src="/js/app.js?v=mwkwgydy"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World Studio — Interaktiivista 3D- ja 2D-verkkosuunnittelua</title>
+<meta name="description" content="World Studio: interaktiiviset 3D-verkkosivustot ja -sovellukset alkaen 1 999 CHF, 2D-verkkosivustot alkaen 499 CHF. Sveitsi.">
+<link rel="canonical" href="https://worldstudio.ch/fi/">
+<link rel="alternate" hreflang="de" href="https://worldstudio.ch/">
+<link rel="alternate" hreflang="fr" href="https://worldstudio.ch/fr/">
+<link rel="alternate" hreflang="it" href="https://worldstudio.ch/it/">
+<link rel="alternate" hreflang="en" href="https://worldstudio.ch/en/">
+<link rel="alternate" hreflang="es" href="https://worldstudio.ch/es/">
+<link rel="alternate" hreflang="es-MX" href="https://worldstudio.ch/es-mx/">
+<link rel="alternate" hreflang="es-AR" href="https://worldstudio.ch/es-ar/">
+<link rel="alternate" hreflang="pt-BR" href="https://worldstudio.ch/pt-br/">
+<link rel="alternate" hreflang="sv" href="https://worldstudio.ch/sv/">
+<link rel="alternate" hreflang="da" href="https://worldstudio.ch/da/">
+<link rel="alternate" hreflang="fi" href="https://worldstudio.ch/fi/">
+<link rel="alternate" hreflang="tr" href="https://worldstudio.ch/tr/">
+<link rel="alternate" hreflang="ru" href="https://worldstudio.ch/ru/">
+<link rel="alternate" hreflang="hy" href="https://worldstudio.ch/hy/">
+<link rel="alternate" hreflang="ka" href="https://worldstudio.ch/ka/">
+<link rel="alternate" hreflang="az" href="https://worldstudio.ch/az/">
+<link rel="alternate" hreflang="he" href="https://worldstudio.ch/he/">
+<link rel="alternate" hreflang="ar" href="https://worldstudio.ch/ar/">
+<link rel="alternate" hreflang="fa" href="https://worldstudio.ch/fa/">
+<link rel="alternate" hreflang="hi" href="https://worldstudio.ch/hi/">
+<link rel="alternate" hreflang="zh-CN" href="https://worldstudio.ch/zh/">
+<link rel="alternate" hreflang="ja" href="https://worldstudio.ch/ja/">
+<link rel="alternate" hreflang="ko" href="https://worldstudio.ch/ko/">
+<link rel="alternate" hreflang="x-default" href="https://worldstudio.ch/">
+<meta name="theme-color" content="#000000">
+<meta property="og:site_name" content="World Studio">
+<meta property="og:title" content="World Studio — Interaktiivista 3D- ja 2D-verkkosuunnittelua">
+<meta property="og:description" content="World Studio: interaktiiviset 3D-verkkosivustot ja -sovellukset alkaen 1 999 CHF, 2D-verkkosivustot alkaen 499 CHF. Sveitsi.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://worldstudio.ch/fi/">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:image" content="https://worldstudio.ch/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=mwkwgydy">
+<link rel="modulepreload" href="/js/app.js?v=mwkwgydy">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://worldstudio.ch/#org","name":"World Studio","url":"https://worldstudio.ch/","logo":"https://worldstudio.ch/favicon.svg","image":"https://worldstudio.ch/img/og.jpg","email":"contact@worldstudio.ch","address":{"@type":"PostalAddress","addressCountry":"CH"},"areaServed":["CH","Worldwide"],"knowsLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"],"description":"World Studio: interaktiiviset 3D-verkkosivustot ja -sovellukset alkaen 1 999 CHF, 2D-verkkosivustot alkaen 499 CHF. Sveitsi."},{"@type":"WebSite","@id":"https://worldstudio.ch/#site","url":"https://worldstudio.ch/","name":"World Studio","publisher":{"@id":"https://worldstudio.ch/#org"},"inLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"]},{"@type":"WebPage","@id":"https://worldstudio.ch/fi/#page","url":"https://worldstudio.ch/fi/","name":"World Studio — Interaktiivista 3D- ja 2D-verkkosuunnittelua","description":"World Studio: interaktiiviset 3D-verkkosivustot ja -sovellukset alkaen 1 999 CHF, 2D-verkkosivustot alkaen 499 CHF. Sveitsi.","inLanguage":"fi","isPartOf":{"@id":"https://worldstudio.ch/#site"},"about":{"@id":"https://worldstudio.ch/#org"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#deck">Siirry sisältöön</a>
+<canvas id="gl" aria-hidden="true"></canvas>
+<picture><source media="(max-aspect-ratio:1/1),(max-width:760px)" srcset="/tex/poster_m.jpg"><img id="poster" src="/tex/poster_d.jpg" alt="" fetchpriority="high"></picture>
+<div class="fx vignette"></div><div class="fx shade"></div>
+<header class="top">
+  <a class="brand" href="#" data-go="0"><span class="mark"></span><span>WORLD STUDIO</span></a>
+  <div class="tools-r">
+    <button class="hbtn" id="langbtn" type="button" aria-label="Kieli"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.4 5.3 3.4 8.5s-1 6.1-3.4 8.5M12 3.5C9.6 5.9 8.6 8.8 8.6 12s1 6.1 3.4 8.5"/></svg><span>FI</span></button>
+    <a class="hbtn" id="authbtn" href="/app/#login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.4 4-5 7.2-5s5.9 1.6 7.2 5"/></svg><span>Kirjaudu / Rekisteröidy</span></a>
+    <a class="hbtn solid" id="startbtn" href="#start" data-go="1">Aloita projekti</a>
+    <button class="iconbtn" id="menubtn" type="button" aria-label="Kaikki sivut"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</header>
+<main id="deck">
+<section class="pg pg-hero" id="hero" data-i="0" aria-labelledby="h-hero"><div class="inner">
+  <div class="box">
+    <h1 class="wordmark" id="h-hero" aria-label="World Studio"><span class="wl" aria-hidden="true">WORLD</span><span class="wl" aria-hidden="true">STUDIO</span></h1>
+    <p class="hero-sub a">Erilainen maailma interaktiivisia 3D-verkkosivustoja ja -sovelluksia</p>
+    <div class="ctas a"><a class="btn primary" href="#start" data-go="1">Aloita projekti</a><a class="btn ghost" href="/app/" data-auth>Kirjaudu / Rekisteröidy</a></div>
+  </div>
+  <p class="hint a"><i></i>Jatka vierittämällä tai pyyhkäisemällä</p>
+</div></section>
+<section class="pg pg-start" id="start" data-i="1" aria-labelledby="h-start"><div class="inner">
+  <div class="box">
+    <p class="kicker a">Aloita projekti</p><h2 class="h" id="h-start">Muuta ideasi kokemukseksi, joka jää mieleen.</h2>
+    <ul class="offers"><li class="a d3"><span class="dot"></span><b>Interaktiiviset 3D-kokemukset</b><em>alkaen 1 999 CHF</em></li><li class="a d2"><span class="dot"></span><b>Visuaaliset 2D-kokemukset</b><em>alkaen 499 CHF</em></li></ul>
+  </div>
+  <form class="cform panel a" novalidate data-form>
+  <div class="fh"><h3>Projektipyyntö</h3><p>Jätä yhteystietosi, niin otamme yhteyttä ja käynnistämme projektisi.</p></div>
+  <div class="row2">
+    <label class="f"><span>Etunimi</span><input name="first_name" required maxlength="80" autocomplete="given-name"></label>
+    <label class="f"><span>Sukunimi</span><input name="last_name" required maxlength="80" autocomplete="family-name"></label>
+  </div>
+  <div class="row2">
+    <label class="f"><span>Matkapuhelinnumero</span><input name="phone" type="tel" inputmode="tel" required maxlength="30" pattern="[0-9 +()\-]{6,30}" autocomplete="tel" dir="ltr"></label>
+    <label class="f"><span>Sähköposti</span><input name="email" type="email" required maxlength="160" autocomplete="email" dir="ltr"></label>
+  </div>
+  <fieldset class="types"><legend>Projektin tyyppi</legend><label class="tchip"><input type="radio" name="project_type" value="3d"><span>3D</span></label><label class="tchip"><input type="radio" name="project_type" value="2d"><span>2D</span></label><label class="tchip"><input type="radio" name="project_type" value="unsure"><span>En ole vielä varma</span></label></fieldset>
+  <label class="f"><span>Projektista</span><textarea name="message" rows="3" required minlength="10" maxlength="4000" placeholder="esim. 3D-verkkosivusto korukaupalle kolmella kielellä"></textarea></label>
+  <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="send"><button type="submit" class="btn primary">Lähetä pyyntö ja aloita</button><p class="privacy">Käytämme tietojasi vain tähän pyyntöön vastaamiseen.</p></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+<section class="pg pg-edge" id="edge" data-i="2" aria-labelledby="h-edge"><div class="inner"><div class="box"><p class="kicker a">Markkinat tänään</p><h2 class="h" id="h-edge">Erottuminen ei ole koskaan sattumaa.</h2><p class="lead a">Internet ja tekoäly tekevät jokaiselle asiakkaalle helpoksi verrata sinua kilpailijoihisi. Verkossa oleminen ei enää itsessään ole etu — voittaja on se, joka on erilainen ja jää mieleen.</p><p class="lead a">Lähes jokaisella yrityksellä on sosiaalisen median sivu ja verkkosivusto. Todellinen ero syntyy, kun verkkosivusto on osa markkinointi- ja asiakashankintastrategiaasi eikä pelkkä näyteikkuna. Se toimii niin startupeille kuin vakiintuneille brändeille ja vahvistaa markkina-asemaasi ja myyntiäsi.</p></div></div></section>
+<section class="pg pg-approach" id="approach" data-i="3" aria-labelledby="h-approach"><div class="inner"><div class="box"><p class="kicker a">Lähestymistapamme</p><h2 class="h" id="h-approach">Emme vain suunnittele verkkosivustoja. Rakennamme brändisi digitaalisen maailman.</h2><p class="lead a">Meille suunnittelu on enemmän kuin koodia ja visuaalisuutta. Se alkaa yrityksesi ymmärtämisestä — ja tämä ymmärrys muovaa rakenteen, kerronnan, visuaalisen identiteetin ja sen, miten ihmiset käyttävät sivustoasi.</p>
+    <ol class="chips"><li class="a"><small>01</small>Tuotteet ja palvelut</li><li class="a"><small>02</small>Kohdemarkkina</li><li class="a"><small>03</small>Asiakaskäyttäytyminen</li><li class="a"><small>04</small>Kilpailuetu</li></ol></div></div></section>
+<section class="pg pg-story" id="story" data-i="4" aria-labelledby="h-story"><div class="inner"><div class="box"><p class="kicker a">Brändin tarina</p><h2 class="h" id="h-story">Muutamme sen, mitä yrityksesi edustaa, tarinaksi, jolla on tarkoitus.</h2><p class="lead a">Kerromme sen konseptisuunnittelun, kuvien, värien, liikkeen ja interaktiivisten 3D-tilojen avulla.</p>
+    <div class="tools a" aria-hidden="true"><span>Konsepti</span><i></i><span>Kuva</span><i></i><span>Väri</span><i></i><span>Liike</span><i></i><span>3D-tila</span></div>
+    <ol class="steps"><li class="a"><small>01</small>Esittelee tuotteen</li><li class="a"><small>02</small>Välittää sen arvon</li><li class="a"><small>03</small>Rakentaa luottamusta</li><li class="a"><small>04</small>Tekee brändistä mieleenpainuvan</li></ol></div></div></section>
+<section class="pg pg-screens" id="screens" data-i="5" aria-labelledby="h-screens"><div class="inner"><div class="box"><p class="kicker a">Responsiivinen</p><h2 class="h" id="h-screens">Virheetön kokemus jokaisella näytöllä</h2><p class="lead a">Sivustosi säilyttää saman laadun puhelimissa, tableteissa, kannettavissa ja suurilla näytöillä. Asettelu, teksti ja liike viritetään jokaiseen kokoon — niitä ei vain pienennetä.</p></div>
+    <div class="devices a" aria-hidden="true">
+      <figure class="laptop"><div class="lid"><div class="scr"><img src="/img/site-desktop.webp" alt="" loading="lazy" decoding="async" width="1600" height="1000"></div></div><div class="base"></div><figcaption>Tietokone</figcaption></figure>
+      <figure class="phone"><div class="scr"><img src="/img/site-mobile.webp" alt="" loading="lazy" decoding="async" width="430" height="932"></div><figcaption>Mobiili</figcaption></figure>
+    </div></div></section>
+<section class="pg pg-dims" id="dims" data-i="6" aria-labelledby="h-dims"><div class="inner"><div class="box"><p class="kicker a">2D, liike, 3D</p><h2 class="h" id="h-dims">Ero 2D-suunnittelun, motion graphicsin ja interaktiivisen 3D:n välillä</h2></div>
+    <div class="cards3"><article class="dcard panel a d1">
+      <div class="vis v1" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+      <div class="txt"><h3>2D-verkkosuunnittelu</h3><small lang="en">2D Web Design</small><p>Selkeät ja nopeat sivut ammattimaisilla kuvilla, teksteillä ja asettelulla. Selkeä ja edullinen tapa esitellä yritys.</p></div></article><article class="dcard panel a d2">
+      <div class="vis v2" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i><i class="orb"></i></div>
+      <div class="txt"><h3>Motion graphics</h3><small lang="en">Motion Graphics</small><p>Samat sivut liikkeessä: teksti ja kuvat heräävät eloon ja ohjaavat huomiota — mutta kaikki tapahtuu yhä tasaisella pinnalla.</p></div></article><article class="dcard panel a d3">
+      <div class="vis v3" data-gem title="Kierrä vetämällä"><span class="drag">Kierrä vetämällä</span></div>
+      <div class="txt"><h3>Meidän interaktiivinen 3D</h3><small lang="en">Interactive 3D Web Design</small><p>Todellinen 3D-tila, joka renderöidään reaaliajassa selaimessa. Kävijät kääntelevät tuotetta, liikkuvat tilassa ja kokevat brändisi läheltä.</p></div></article></div>
+    <p class="closer a">Todellinen ero ei ole liikkeen näyttämisessä. Se on todellisen 3D-tilan luomisessa — tilan, jossa ihmiset voivat toimia ja kokea brändisi.</p></div></section>
+<section class="pg pg-service" id="service" data-i="7" aria-labelledby="h-service"><div class="inner"><div class="box"><p class="kicker a">Kokonaispalvelu</p><h2 class="h" id="h-service">Yrityksesi ymmärtämisestä erottuvaan digitaaliseen kokemukseen</h2><p class="lead a">Kaikki yhdessä tiimissä. Yhdistämme markkinointistrategian, ohjelmistokehityksen ja 3D-suunnittelun, jotta verkkosivustosi tekee työtä liiketoimintasi hyväksi.</p>
+    <ol class="svc"><li class="a"><small>01</small><b>Analyysi ja suunnittelu</b><span>Liiketoiminta-analyysi sekä strateginen ja tekninen suunnitelma</span></li><li class="a"><small>02</small><b>3D ja animaatio</b><span>3D-ympäristöt, tuotemallinnus ja elokuvallinen animaatio</span></li><li class="a"><small>03</small><b>Näkyvyys haussa</b><span>Hakukoneoptimointi ja optimointi tekoälyhakuun</span></li><li class="a"><small>04</small><b>Asiakaskanavat</b><span>Verkkovaraukset, tilaukset ja maksuratkaisut</span></li><li class="a"><small>05</small><b>Markkinointi + tekniikka</b><span>Markkinointistrategia yhdistettynä ohjelmistokehitykseen</span></li></ol></div></div></section>
+<section class="pg pg-biz" id="biz" data-i="8" aria-labelledby="h-biz"><div class="inner"><div class="box"><p class="kicker a">Kaikille yrityksille</p><h2 class="h" id="h-biz">Startupeista monikansallisiin konserneihin — sivusto, joka sopii.</h2><p class="lead a">Myitpä tai tarjositpa mitä tahansa ja olitpa minkä kokoinen tahansa, suunnittelemme sivuston, joka sopii yrityksellesi tänään ja kasvaa sen mukana huomenna.</p>
+    <ol class="ladder"><li class="a" style="--k:0"><i></i><b>Startupit ja perustajat</b><span>Näytä vakiintuneelta ensimmäisestä päivästä ja lanseeraa nopeasti.</span></li><li class="a" style="--k:1"><i></i><b>Pienet ja paikalliset yritykset</b><span>Tule löydetyksi lähialueella ja muuta kävijät asiakkaiksi.</span></li><li class="a" style="--k:2"><i></i><b>Kaupat ja verkkokaupat</b><span>Tuotteet 3D:nä, helppo kassa ja turvallinen maksu.</span></li><li class="a" style="--k:3"><i></i><b>Suuret vähittäiskaupat ja brändit</b><span>Vahvat brändimaailmat monille tuotteille ja markkinoille.</span></li><li class="a" style="--k:4"><i></i><b>Kansainväliset ja monikansalliset konsernit</b><span>Monta kieltä ja maata, hallinnoituna yhdessä paikassa.</span></li></ol></div>
+    <ul class="sectors"><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16M6 11v7h12v-7M8 7c0-2 2-3 4-3s4 1 4 3"/></svg>Ravintolat ja kahvilat</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M10 20v-5h4v5"/></svg>Hotellit ja matkailu</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Terveys ja lääketiede</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z"/></svg>Kauneus ja hyvinvointi</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10h-5v-6H9v6z"/></svg>Kiinteistöt</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M5 8h14M7 8l-3 6h6zM17 8l-3 6h6z"/></svg>Laki ja rahoitus</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l5 3V9l5 3V5h6v15z"/></svg>Teollisuus ja valmistus</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-4 9 4-9 4zM7 11v5c3 2 7 2 10 0v-5"/></svg>Koulutus</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10l3 6-8 10L4 10z"/></svg>Muoti ja korut</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6-9 9H5v-6z"/></svg>Käsityö</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg>Teknologia ja ohjelmistot</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.4 5 5.6.8-4 3.9.9 5.5L12 16.6 7.1 19.2l.9-5.5-4-3.9L9.6 9z"/></svg>Kulttuuri ja tapahtumat</li></ul></div></section>
+<section class="pg pg-langs" id="langs" data-i="9" aria-labelledby="h-langs"><div class="inner"><div class="box"><p class="kicker a">Monikielisyys</p><h2 class="h" id="h-langs">Ei kielimuureja — maailmanlaajuinen näkyvyys paikallisella otteella</h2><p class="lead a">Sivustosi voi puhua mitä tahansa elävää kieltä. Se tunnistaa jokaisen kävijän kielen ja sijainnin ja näyttää sisällön hänen omalla kielellään — ja kieltä voi vaihtaa itse milloin tahansa.</p>
+    <ul class="ticks"><li class="a">Mikä tahansa elävä kieli</li><li class="a">Älykäs kielen ja sijainnin tunnistus</li><li class="a">Kielen vaihto käsin</li><li class="a">Oikealta vasemmalle ja vasemmalta oikealle</li></ul></div><div class="room"></div></div></section>
+<section class="pg pg-social" id="social" data-i="10" aria-labelledby="h-social"><div class="inner"><div class="box"><p class="kicker a">Sosiaalinen media</p><h2 class="h" id="h-social">Sosiaalinen mediasi yhdistettynä verkkosivustoosi</h2><p class="sub a">Julkaise kerran — näy kaikkialla digitaalisessa maailmassasi.</p><p class="lead a">Sisältö Instagramista, Facebookista, YouTubesta, TikTokista, LinkedInistä, Pinterestistä, Threadsista, X:stä ja Telegramista muuttuu automaattisesti sivustosi omiksi sivuiksi — jokaisella oma URL, kuvat ja video, kuvaus, käännökset ja hakukoneoptimointi.</p><p class="note a">Riippuu kunkin alustan virallisista käyttömahdollisuuksista.</p></div><div class="room"></div></div></section>
+<section class="pg pg-booking" id="booking" data-i="11" aria-labelledby="h-booking"><div class="inner"><div class="box"><p class="kicker a">Verkkovaraus</p><h2 class="h" id="h-booking">Oma sovellus varausten hallintaan</h2><p class="lead a">Saat jokaisesta varauksesta heti ilmoituksen puhelimeesi. Hallitse aikoja, ilmoituksia ja varauksia omassa kalenterissa.</p>
+    <ul class="ticks"><li class="a">Heti ilmoitus jokaisesta varauksesta</li><li class="a">Oma kalenteri</li><li class="a">Ajat ja muistutukset yhdessä paikassa</li></ul></div>
+    <div class="phonemock a" aria-hidden="true"><div class="ph">
+      <div class="island"></div>
+      <div class="clock">14:28</div>
+      <div class="notif"><span class="app"><i></i>Varaus</span><span class="now">nyt</span><b>Uusi varaus</b><span class="body">ti 14.30 · 60 min</span></div>
+      <div class="cal"><div class="ct">Tämä viikko</div><div class="cg"><span class="dh">M</span><span class="dh">T</span><span class="dh">K</span><span class="dh">T</span><span class="dh">P</span><span class="dh">L</span><span class="dh">S</span>
+        <i class="ev" style="--d:0;--r:2;--h:2"></i><i class="ev" style="--d:1;--r:0;--h:1"></i><i class="ev new" style="--d:1;--r:4;--h:2">Varattu</i><i class="ev" style="--d:2;--r:1;--h:3"></i><i class="ev" style="--d:3;--r:3;--h:1"></i><i class="ev" style="--d:4;--r:0;--h:2"></i><i class="ev" style="--d:4;--r:3;--h:2"></i><i class="ev" style="--d:5;--r:1;--h:1"></i></div></div>
+    </div></div></div></section>
+<section class="pg pg-mail" id="mail" data-i="12" aria-labelledby="h-mail"><div class="inner"><div class="box"><p class="kicker a">Yrityssähköposti</p><h2 class="h" id="h-mail">Oma sähköpostiosoite jokaiselle yrityksesi osa-alueelle</h2><p class="lead a">Ammattimaiset osoitteet omassa verkkotunnuksessasi, yhdistettynä Gmailiin, Outlookiin tai jo käyttämääsi palveluun.</p></div>
+    <ul class="mails panel a"><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">ceo@yourbrand.ch</bdi><span class="role">Johto</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">contact@yourbrand.ch</bdi><span class="role">Asiakaspalvelu</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">sales@yourbrand.ch</bdi><span class="role">Myynti</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">booking@yourbrand.ch</bdi><span class="role">Varaukset ja ajanvaraus</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">support@yourbrand.ch</bdi><span class="role">Tuki</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">info@yourbrand.ch</bdi><span class="role">Yleiset tiedot</span></li></ul></div></section>
+<section class="pg pg-work" id="work" data-i="13" aria-labelledby="h-work"><div class="inner"><div class="box"><p class="kicker a">Työt</p><h2 class="h" id="h-work">3D- ja 2D-töitä</h2><p class="lead a">Konseptisuunnitelmia, jotka esittelevät tyyliämme. Näistä esimerkeistä näytämme vain kuvia ja videota.</p></div>
+    <div class="works"><button class="wcard a k3d" type="button" data-work="tattoo"><span class="th"><img src="/work/tattoo.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Tatuointistudio</b><span class="tags"><em>3D</em><em class="demo">Demo / konsepti</em></span><span class="wd">Titaaninen 3D-pääkallo, joka liikkuu sivulla vierittäessäsi elokuvallisessa savussa.</span></span></button><button class="wcard a k3d" type="button" data-work="nail"><span class="th"><img src="/work/nail.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Kynsistudio</b><span class="tags"><em>3D</em><em class="demo">Demo / konsepti</em></span><span class="wd">Paksusta lasista tehdyt 3D-kynsilakkapullot leijuvat vieritystä vastaan valkoisessa ja pastellisessa teemassa.</span></span></button><button class="wcard a k2d" type="button" data-work="alpine"><span class="th"><img src="/work/alpine.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Vuoristo-opas</b><span class="tags"><em>2D</em><em class="demo">Demo / konsepti</em></span><span class="wd">Valmiille pohjalle rakennettu 2D-sivusto brändin väreillä, teksteillä ja kuvilla.</span></span></button><button class="wcard a k2d" type="button" data-work="atelier"><span class="th"><img src="/work/atelier.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>Käsityöpaja</b><span class="tags"><em>2D</em><em class="demo">Demo / konsepti</em></span><span class="wd">Valmiille pohjalle rakennettu 2D-sivusto pienelle pajalle ja myymälälle.</span></span></button></div></div></section>
+<section class="pg pg-news" id="news" data-i="14" aria-labelledby="h-news"><div class="inner"><div class="box"><p class="kicker a">Uutiset</p><h2 class="h" id="h-news">Uutta teknologiassa — joka päivä</h2><p class="lead a">Lyhyt päivittäinen valikoima tärkeimpiä teknologian ja verkon uutisia, jokaisessa linkki alkuperäiseen lähteeseen.</p><p class="a"><a class="btn ghost" href="/news/">Kaikki uutiset</a></p></div>
+    <ul class="newslist a" data-news aria-live="polite"><li class="ph"></li><li class="ph"></li><li class="ph"></li><li class="ph"></li></ul></div></section>
+<section class="pg pg-contact" id="contact" data-i="15" aria-labelledby="h-contact"><div class="inner">
+  <div class="box">
+    <p class="kicker a">Yhteystiedot</p><h2 class="h" id="h-contact">Puhutaan projektistasi.</h2><p class="lead a">Kirjoita meille, chattaa kanssamme tai lähetä projektipyyntö — vastaamme yleensä yhden työpäivän kuluessa.</p>
+    <ul class="cways">
+      <li class="a"><span class="ci ci-mail" aria-hidden="true"></span><small>Sähköposti</small><a href="mailto:contact@worldstudio.ch" dir="ltr">contact@worldstudio.ch</a></li>
+      <li class="a"><span class="ci ci-chat" aria-hidden="true"></span><small>Live-chat</small><button type="button" class="linkbtn" data-chat>Avaa chat</button></li>
+    </ul>
+    <ul class="offers mini"><li class="a d3"><span class="dot"></span><b>Interaktiiviset 3D-kokemukset</b><em>alkaen 1 999 CHF</em></li><li class="a d2"><span class="dot"></span><b>Visuaaliset 2D-kokemukset</b><em>alkaen 499 CHF</em></li></ul>
+    <p class="foot a">© 2026 World Studio · Kuvat Maasta ja taivaasta: NASA</p>
+  </div>
+  <form class="cform panel a" novalidate data-form>
+  <div class="fh"><h3>Projektipyyntö</h3><p>Jätä yhteystietosi, niin otamme yhteyttä ja käynnistämme projektisi.</p></div>
+  <div class="row2">
+    <label class="f"><span>Etunimi</span><input name="first_name" required maxlength="80" autocomplete="given-name"></label>
+    <label class="f"><span>Sukunimi</span><input name="last_name" required maxlength="80" autocomplete="family-name"></label>
+  </div>
+  <div class="row2">
+    <label class="f"><span>Matkapuhelinnumero</span><input name="phone" type="tel" inputmode="tel" required maxlength="30" pattern="[0-9 +()\-]{6,30}" autocomplete="tel" dir="ltr"></label>
+    <label class="f"><span>Sähköposti</span><input name="email" type="email" required maxlength="160" autocomplete="email" dir="ltr"></label>
+  </div>
+  <fieldset class="types"><legend>Projektin tyyppi</legend><label class="tchip"><input type="radio" name="project_type" value="3d"><span>3D</span></label><label class="tchip"><input type="radio" name="project_type" value="2d"><span>2D</span></label><label class="tchip"><input type="radio" name="project_type" value="unsure"><span>En ole vielä varma</span></label></fieldset>
+  <label class="f"><span>Projektista</span><textarea name="message" rows="3" required minlength="10" maxlength="4000" placeholder="esim. 3D-verkkosivusto korukaupalle kolmella kielellä"></textarea></label>
+  <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="send"><button type="submit" class="btn primary">Lähetä pyyntö ja aloita</button><p class="privacy">Käytämme tietojasi vain tähän pyyntöön vastaamiseen.</p></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+<div class="layer" id="geo" aria-hidden="true"></div>
+<div class="layer" id="orbit" aria-hidden="true"></div>
+<nav class="pager" aria-label="Kaikki sivut">
+  <button class="iconbtn" id="prev" type="button" aria-label="Edellinen sivu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6l-6 6 6 6"/></svg></button>
+  <div class="count" aria-live="polite"></div>
+  <button class="iconbtn" id="next" type="button" aria-label="Seuraava sivu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></button>
+</nav>
+<dialog id="menu"><div class="mw"><ol></ol></div><button class="iconbtn x" type="button" aria-label="Sulje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
+<dialog id="langdlg"><div class="mw"><h2>Valitse kieli</h2><ul></ul></div><button class="iconbtn x" type="button" aria-label="Sulje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
+<dialog id="lightbox"><div class="lw"><div class="lh"><div></div><button class="iconbtn x" type="button" aria-label="Sulje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="stage"></div><div class="thumbs"></div></div></dialog>
+<div id="loader" aria-hidden="true"><div class="lw"><div class="lt"><span style="--k:0">W</span><span style="--k:1">O</span><span style="--k:2">R</span><span style="--k:3">L</span><span style="--k:4">D</span><span style="--k:0">&nbsp;</span><span style="--k:6">S</span><span style="--k:7">T</span><span style="--k:8">U</span><span style="--k:9">D</span><span style="--k:10">I</span><span style="--k:11">O</span></div><div class="lb"><i></i></div><div class="ls"></div></div></div>
+<script type="module" src="/js/app.js?v=mwkwgydy"></script>
+</body>
+</html>

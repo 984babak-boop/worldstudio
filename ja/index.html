@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World Studio — インタラクティブな3D・2Dウェブデザイン</title>
+<meta name="description" content="World Studio：インタラクティブな3Dウェブサイト・アプリはCHF 1,999から、2DウェブサイトはCHF 499から。スイス。">
+<link rel="canonical" href="https://worldstudio.ch/ja/">
+<link rel="alternate" hreflang="de" href="https://worldstudio.ch/">
+<link rel="alternate" hreflang="fr" href="https://worldstudio.ch/fr/">
+<link rel="alternate" hreflang="it" href="https://worldstudio.ch/it/">
+<link rel="alternate" hreflang="en" href="https://worldstudio.ch/en/">
+<link rel="alternate" hreflang="es" href="https://worldstudio.ch/es/">
+<link rel="alternate" hreflang="es-MX" href="https://worldstudio.ch/es-mx/">
+<link rel="alternate" hreflang="es-AR" href="https://worldstudio.ch/es-ar/">
+<link rel="alternate" hreflang="pt-BR" href="https://worldstudio.ch/pt-br/">
+<link rel="alternate" hreflang="sv" href="https://worldstudio.ch/sv/">
+<link rel="alternate" hreflang="da" href="https://worldstudio.ch/da/">
+<link rel="alternate" hreflang="fi" href="https://worldstudio.ch/fi/">
+<link rel="alternate" hreflang="tr" href="https://worldstudio.ch/tr/">
+<link rel="alternate" hreflang="ru" href="https://worldstudio.ch/ru/">
+<link rel="alternate" hreflang="hy" href="https://worldstudio.ch/hy/">
+<link rel="alternate" hreflang="ka" href="https://worldstudio.ch/ka/">
+<link rel="alternate" hreflang="az" href="https://worldstudio.ch/az/">
+<link rel="alternate" hreflang="he" href="https://worldstudio.ch/he/">
+<link rel="alternate" hreflang="ar" href="https://worldstudio.ch/ar/">
+<link rel="alternate" hreflang="fa" href="https://worldstudio.ch/fa/">
+<link rel="alternate" hreflang="hi" href="https://worldstudio.ch/hi/">
+<link rel="alternate" hreflang="zh-CN" href="https://worldstudio.ch/zh/">
+<link rel="alternate" hreflang="ja" href="https://worldstudio.ch/ja/">
+<link rel="alternate" hreflang="ko" href="https://worldstudio.ch/ko/">
+<link rel="alternate" hreflang="x-default" href="https://worldstudio.ch/">
+<meta name="theme-color" content="#000000">
+<meta property="og:site_name" content="World Studio">
+<meta property="og:title" content="World Studio — インタラクティブな3D・2Dウェブデザイン">
+<meta property="og:description" content="World Studio：インタラクティブな3Dウェブサイト・アプリはCHF 1,999から、2DウェブサイトはCHF 499から。スイス。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://worldstudio.ch/ja/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://worldstudio.ch/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=mwkwgydy">
+<link rel="modulepreload" href="/js/app.js?v=mwkwgydy">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://worldstudio.ch/#org","name":"World Studio","url":"https://worldstudio.ch/","logo":"https://worldstudio.ch/favicon.svg","image":"https://worldstudio.ch/img/og.jpg","email":"contact@worldstudio.ch","address":{"@type":"PostalAddress","addressCountry":"CH"},"areaServed":["CH","Worldwide"],"knowsLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"],"description":"World Studio：インタラクティブな3Dウェブサイト・アプリはCHF 1,999から、2DウェブサイトはCHF 499から。スイス。"},{"@type":"WebSite","@id":"https://worldstudio.ch/#site","url":"https://worldstudio.ch/","name":"World Studio","publisher":{"@id":"https://worldstudio.ch/#org"},"inLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"]},{"@type":"WebPage","@id":"https://worldstudio.ch/ja/#page","url":"https://worldstudio.ch/ja/","name":"World Studio — インタラクティブな3D・2Dウェブデザイン","description":"World Studio：インタラクティブな3Dウェブサイト・アプリはCHF 1,999から、2DウェブサイトはCHF 499から。スイス。","inLanguage":"ja","isPartOf":{"@id":"https://worldstudio.ch/#site"},"about":{"@id":"https://worldstudio.ch/#org"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#deck">本文へスキップ</a>
+<canvas id="gl" aria-hidden="true"></canvas>
+<picture><source media="(max-aspect-ratio:1/1),(max-width:760px)" srcset="/tex/poster_m.jpg"><img id="poster" src="/tex/poster_d.jpg" alt="" fetchpriority="high"></picture>
+<div class="fx vignette"></div><div class="fx shade"></div>
+<header class="top">
+  <a class="brand" href="#" data-go="0"><span class="mark"></span><span>WORLD STUDIO</span></a>
+  <div class="tools-r">
+    <button class="hbtn" id="langbtn" type="button" aria-label="言語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.4 5.3 3.4 8.5s-1 6.1-3.4 8.5M12 3.5C9.6 5.9 8.6 8.8 8.6 12s1 6.1 3.4 8.5"/></svg><span>日本語</span></button>
+    <a class="hbtn" id="authbtn" href="/app/#login"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.4 4-5 7.2-5s5.9 1.6 7.2 5"/></svg><span>ログイン / 新規登録</span></a>
+    <a class="hbtn solid" id="startbtn" href="#start" data-go="1">プロジェクトを始める</a>
+    <button class="iconbtn" id="menubtn" type="button" aria-label="すべてのページ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</header>
+<main id="deck">
+<section class="pg pg-hero" id="hero" data-i="0" aria-labelledby="h-hero"><div class="inner">
+  <div class="box">
+    <h1 class="wordmark" id="h-hero" aria-label="World Studio"><span class="wl" aria-hidden="true">WORLD</span><span class="wl" aria-hidden="true">STUDIO</span></h1>
+    <p class="hero-sub a">インタラクティブな3Dウェブサイトとアプリの、新しい世界</p>
+    <div class="ctas a"><a class="btn primary" href="#start" data-go="1">プロジェクトを始める</a><a class="btn ghost" href="/app/" data-auth>ログイン / 新規登録</a></div>
+  </div>
+  <p class="hint a"><i></i>スクロールまたはスワイプで続きへ</p>
+</div></section>
+<section class="pg pg-start" id="start" data-i="1" aria-labelledby="h-start"><div class="inner">
+  <div class="box">
+    <p class="kicker a">プロジェクトを始める</p><h2 class="h" id="h-start">あなたのアイデアを、記憶に残る体験に。</h2>
+    <ul class="offers"><li class="a d3"><span class="dot"></span><b>インタラクティブ3D体験</b><em>CHF 1,999から</em></li><li class="a d2"><span class="dot"></span><b>ビジュアル2D体験</b><em>CHF 499から</em></li></ul>
+  </div>
+  <form class="cform panel a" novalidate data-form>
+  <div class="fh"><h3>プロジェクトのご相談</h3><p>ご連絡先をお知らせください。こちらからご連絡し、プロジェクトを始めます。</p></div>
+  <div class="row2">
+    <label class="f"><span>名</span><input name="first_name" required maxlength="80" autocomplete="given-name"></label>
+    <label class="f"><span>姓</span><input name="last_name" required maxlength="80" autocomplete="family-name"></label>
+  </div>
+  <div class="row2">
+    <label class="f"><span>携帯電話番号</span><input name="phone" type="tel" inputmode="tel" required maxlength="30" pattern="[0-9 +()\-]{6,30}" autocomplete="tel" dir="ltr"></label>
+    <label class="f"><span>メールアドレス</span><input name="email" type="email" required maxlength="160" autocomplete="email" dir="ltr"></label>
+  </div>
+  <fieldset class="types"><legend>プロジェクトの種類</legend><label class="tchip"><input type="radio" name="project_type" value="3d"><span>3D</span></label><label class="tchip"><input type="radio" name="project_type" value="2d"><span>2D</span></label><label class="tchip"><input type="radio" name="project_type" value="unsure"><span>まだ決めていない</span></label></fieldset>
+  <label class="f"><span>プロジェクトについて</span><textarea name="message" rows="3" required minlength="10" maxlength="4000" placeholder="例：ジュエリーショップの3Dウェブサイト（3言語）"></textarea></label>
+  <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="send"><button type="submit" class="btn primary">送信して始める</button><p class="privacy">ご入力の情報は、このご相談への回答にのみ使用します。</p></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+<section class="pg pg-edge" id="edge" data-i="2" aria-labelledby="h-edge"><div class="inner"><div class="box"><p class="kicker a">いまの市場</p><h2 class="h" id="h-edge">際立つことは、決して偶然ではありません。</h2><p class="lead a">インターネットとAIにより、どのお客様も簡単にあなたと競合を比較できるようになりました。オンラインにいること自体はもはや強みではありません。勝つのは、違いがあり、記憶に残ることです。</p><p class="lead a">ほとんどの企業がSNSのページとウェブサイトを持っています。本当の差が生まれるのは、ウェブサイトが単なるショーウィンドウではなく、マーケティングと集客戦略の一部になったときです。スタートアップにも老舗ブランドにも有効で、市場でのポジションと売上を強くします。</p></div></div></section>
+<section class="pg pg-approach" id="approach" data-i="3" aria-labelledby="h-approach"><div class="inner"><div class="box"><p class="kicker a">私たちのアプローチ</p><h2 class="h" id="h-approach">私たちはウェブサイトをデザインするだけではありません。ブランドのデジタルな世界をつくります。</h2><p class="lead a">私たちにとってデザインは、コードやビジュアルを超えたものです。まずあなたのビジネスを理解することから始まり、その理解がサイトの構成、ストーリー、ビジュアルアイデンティティ、そして人々の使い方を形づくります。</p>
+    <ol class="chips"><li class="a"><small>01</small>商品とサービス</li><li class="a"><small>02</small>ターゲット市場</li><li class="a"><small>03</small>顧客行動</li><li class="a"><small>04</small>競争優位性</li></ol></div></div></section>
+<section class="pg pg-story" id="story" data-i="4" aria-labelledby="h-story"><div class="inner"><div class="box"><p class="kicker a">ブランドストーリー</p><h2 class="h" id="h-story">あなたのビジネスが大切にしていることを、目的のある物語に。</h2><p class="lead a">コンセプトデザイン、画像、色、動き、そしてインタラクティブな3D空間で伝えます。</p>
+    <div class="tools a" aria-hidden="true"><span>コンセプト</span><i></i><span>画像</span><i></i><span>色</span><i></i><span>動き</span><i></i><span>3D空間</span></div>
+    <ol class="steps"><li class="a"><small>01</small>商品を紹介する</li><li class="a"><small>02</small>価値を伝える</li><li class="a"><small>03</small>信頼を築く</li><li class="a"><small>04</small>ブランドを記憶に残す</li></ol></div></div></section>
+<section class="pg pg-screens" id="screens" data-i="5" aria-labelledby="h-screens"><div class="inner"><div class="box"><p class="kicker a">レスポンシブ</p><h2 class="h" id="h-screens">どの画面でも完璧な体験を</h2><p class="lead a">スマートフォン、タブレット、ノートPC、大型ディスプレイのどれでも、同じ品質を保ちます。レイアウト、文字、動きはサイズごとに最適化され、単に縮小されるだけではありません。</p></div>
+    <div class="devices a" aria-hidden="true">
+      <figure class="laptop"><div class="lid"><div class="scr"><img src="/img/site-desktop.webp" alt="" loading="lazy" decoding="async" width="1600" height="1000"></div></div><div class="base"></div><figcaption>デスクトップ</figcaption></figure>
+      <figure class="phone"><div class="scr"><img src="/img/site-mobile.webp" alt="" loading="lazy" decoding="async" width="430" height="932"></div><figcaption>モバイル</figcaption></figure>
+    </div></div></section>
+<section class="pg pg-dims" id="dims" data-i="6" aria-labelledby="h-dims"><div class="inner"><div class="box"><p class="kicker a">2D・モーション・3D</p><h2 class="h" id="h-dims">2Dデザイン、モーショングラフィックス、インタラクティブ3Dの違い</h2></div>
+    <div class="cards3"><article class="dcard panel a d1">
+      <div class="vis v1" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+      <div class="txt"><h3>2Dウェブデザイン</h3><small lang="en">2D Web Design</small><p>プロの写真、文章、レイアウトによる、すっきりと速いページ。ビジネスを分かりやすく、経済的に紹介できます。</p></div></article><article class="dcard panel a d2">
+      <div class="vis v2" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i><i class="orb"></i></div>
+      <div class="txt"><h3>モーショングラフィックス</h3><small lang="en">Motion Graphics</small><p>同じページに動きを加えたもの。文字や画像が動き出して視線を導きますが、すべては平面の上で起きています。</p></div></article><article class="dcard panel a d3">
+      <div class="vis v3" data-gem title="ドラッグで回転"><span class="drag">ドラッグで回転</span></div>
+      <div class="txt"><h3>私たちのインタラクティブ3D</h3><small lang="en">Interactive 3D Web Design</small><p>ブラウザでリアルタイムに描画される本物の3D空間。訪問者は商品を回し、空間を移動し、あなたのブランドを間近で体験します。</p></div></article></div>
+    <p class="closer a">本当の違いは、動きを見せることではありません。人々が触れて操作でき、その中でブランドを体験できる、本物の3D空間をつくることです。</p></div></section>
+<section class="pg pg-service" id="service" data-i="7" aria-labelledby="h-service"><div class="inner"><div class="box"><p class="kicker a">フルサービス</p><h2 class="h" id="h-service">ビジネスの理解から、際立つデジタル体験まで</h2><p class="lead a">すべてをひとつのチームで。マーケティング戦略、ソフトウェア開発、3Dデザインを組み合わせ、ビジネスのために働くウェブサイトをつくります。</p>
+    <ol class="svc"><li class="a"><small>01</small><b>分析と計画</b><span>戦略・技術プランを含むビジネス分析</span></li><li class="a"><small>02</small><b>3Dとアニメーション</b><span>3D空間、プロダクトモデリング、映画のようなアニメーション</span></li><li class="a"><small>03</small><b>検索で見つかる</b><span>SEOとAI検索への最適化</span></li><li class="a"><small>04</small><b>顧客との接点</b><span>オンライン予約、注文、決済システム</span></li><li class="a"><small>05</small><b>マーケティング＋エンジニアリング</b><span>マーケティング戦略とソフトウェア開発の融合</span></li></ol></div></div></section>
+<section class="pg pg-biz" id="biz" data-i="8" aria-labelledby="h-biz"><div class="inner"><div class="box"><p class="kicker a">あらゆるビジネスへ</p><h2 class="h" id="h-biz">スタートアップから多国籍企業まで、ぴったりのウェブサイトを。</h2><p class="lead a">何を販売・提供していても、規模がどれほどでも、今のビジネスに合い、これからの成長にも寄り添うウェブサイトをデザインします。</p>
+    <ol class="ladder"><li class="a" style="--k:0"><i></i><b>スタートアップと創業者</b><span>初日から信頼感のある見た目で、すばやく公開。</span></li><li class="a" style="--k:1"><i></i><b>小規模・地域のビジネス</b><span>近くのお客様に見つけてもらい、訪問者を顧客に。</span></li><li class="a" style="--k:2"><i></i><b>ショップとEC</b><span>3Dで見せる商品、シンプルな購入手続き、安全な決済。</span></li><li class="a" style="--k:3"><i></i><b>大手小売とブランド</b><span>多くの商品と市場にまたがる力強いブランドの世界。</span></li><li class="a" style="--k:4"><i></i><b>国際・多国籍グループ</b><span>多言語・多数の国を、ひとつの場所で管理。</span></li></ol></div>
+    <ul class="sectors"><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16M6 11v7h12v-7M8 7c0-2 2-3 4-3s4 1 4 3"/></svg>レストラン・カフェ</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M10 20v-5h4v5"/></svg>ホテル・観光</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>医療・ヘルスケア</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z"/></svg>美容・ウェルネス</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10h-5v-6H9v6z"/></svg>不動産</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M5 8h14M7 8l-3 6h6zM17 8l-3 6h6z"/></svg>法律・金融</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l5 3V9l5 3V5h6v15z"/></svg>工業・製造</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-4 9 4-9 4zM7 11v5c3 2 7 2 10 0v-5"/></svg>教育</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10l3 6-8 10L4 10z"/></svg>ファッション・ジュエリー</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6-9 9H5v-6z"/></svg>職人・工芸</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg>テクノロジー・ソフトウェア</li><li class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l2.4 5 5.6.8-4 3.9.9 5.5L12 16.6 7.1 19.2l.9-5.5-4-3.9L9.6 9z"/></svg>文化・イベント</li></ul></div></section>
+<section class="pg pg-langs" id="langs" data-i="9" aria-labelledby="h-langs"><div class="inner"><div class="box"><p class="kicker a">多言語対応</p><h2 class="h" id="h-langs">言葉の壁なく、世界へ。ローカルな感覚のまま</h2><p class="lead a">あなたのサイトは、あらゆる現用言語に対応できます。訪問者ごとに言語と地域を判別して、その人の言語で表示し、いつでも手動で切り替えられます。</p>
+    <ul class="ticks"><li class="a">あらゆる現用言語</li><li class="a">言語と地域のスマート判別</li><li class="a">手動での言語切り替え</li><li class="a">右から左・左から右の両方に対応</li></ul></div><div class="room"></div></div></section>
+<section class="pg pg-social" id="social" data-i="10" aria-labelledby="h-social"><div class="inner"><div class="box"><p class="kicker a">SNS</p><h2 class="h" id="h-social">SNSとウェブサイトをひとつに</h2><p class="sub a">一度の投稿で、あなたのデジタルな世界のすべてに。</p><p class="lead a">Instagram、Facebook、YouTube、TikTok、LinkedIn、Pinterest、Threads、X、Telegramの投稿が、自動的にサイト上の個別ページになります。それぞれに独自のURL、画像と動画、説明文、翻訳、SEOが付きます。</p><p class="note a">各プラットフォームが公式に提供する連携方法によります。</p></div><div class="room"></div></div></section>
+<section class="pg pg-booking" id="booking" data-i="11" aria-labelledby="h-booking"><div class="inner"><div class="box"><p class="kicker a">オンライン予約</p><h2 class="h" id="h-booking">専用の予約管理アプリ</h2><p class="lead a">予約が入るたびに、スマートフォンへすぐに通知が届きます。時間、通知、予約をひとつの専用カレンダーで管理できます。</p>
+    <ul class="ticks"><li class="a">予約ごとに即時通知</li><li class="a">専用カレンダー</li><li class="a">時間とリマインダーを一か所で</li></ul></div>
+    <div class="phonemock a" aria-hidden="true"><div class="ph">
+      <div class="island"></div>
+      <div class="clock">14:28</div>
+      <div class="notif"><span class="app"><i></i>予約</span><span class="now">今</span><b>新しい予約</b><span class="body">火 14:30・60分</span></div>
+      <div class="cal"><div class="ct">今週</div><div class="cg"><span class="dh">月</span><span class="dh">火</span><span class="dh">水</span><span class="dh">木</span><span class="dh">金</span><span class="dh">土</span><span class="dh">日</span>
+        <i class="ev" style="--d:0;--r:2;--h:2"></i><i class="ev" style="--d:1;--r:0;--h:1"></i><i class="ev new" style="--d:1;--r:4;--h:2">予約済み</i><i class="ev" style="--d:2;--r:1;--h:3"></i><i class="ev" style="--d:3;--r:3;--h:1"></i><i class="ev" style="--d:4;--r:0;--h:2"></i><i class="ev" style="--d:4;--r:3;--h:2"></i><i class="ev" style="--d:5;--r:1;--h:1"></i></div></div>
+    </div></div></div></section>
+<section class="pg pg-mail" id="mail" data-i="12" aria-labelledby="h-mail"><div class="inner"><div class="box"><p class="kicker a">ビジネスメール</p><h2 class="h" id="h-mail">部門ごとに専用のメールアドレスを</h2><p class="lead a">独自ドメインのプロフェッショナルなアドレスを、Gmail、Outlook、またはお使いのサービスに接続できます。</p></div>
+    <ul class="mails panel a"><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">ceo@yourbrand.ch</bdi><span class="role">経営</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">contact@yourbrand.ch</bdi><span class="role">お客様窓口</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">sales@yourbrand.ch</bdi><span class="role">営業</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">booking@yourbrand.ch</bdi><span class="role">予約・アポイント</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">support@yourbrand.ch</bdi><span class="role">サポート</span></li><li><span class="mi" aria-hidden="true"></span><bdi dir="ltr">info@yourbrand.ch</bdi><span class="role">総合案内</span></li></ul></div></section>
+<section class="pg pg-work" id="work" data-i="13" aria-labelledby="h-work"><div class="inner"><div class="box"><p class="kicker a">制作例</p><h2 class="h" id="h-work">3Dと2Dの制作例</h2><p class="lead a">私たちのスタイルを示すために制作したコンセプトデザインです。これらの例では画像と動画のみを公開しています。</p></div>
+    <div class="works"><button class="wcard a k3d" type="button" data-work="tattoo"><span class="th"><img src="/work/tattoo.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>タトゥースタジオ</b><span class="tags"><em>3D</em><em class="demo">デモ / コンセプト</em></span><span class="wd">スクロールに合わせてページを進むチタンの3Dスカル。映画のような煙の中で。</span></span></button><button class="wcard a k3d" type="button" data-work="nail"><span class="th"><img src="/work/nail.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>ネイルサロン</b><span class="tags"><em>3D</em><em class="demo">デモ / コンセプト</em></span><span class="wd">厚いガラスの3Dネイルボトルがスクロールと逆方向に漂う、白とパステルのテーマ。</span></span></button><button class="wcard a k2d" type="button" data-work="alpine"><span class="th"><img src="/work/alpine.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>山岳ガイド</b><span class="tags"><em>2D</em><em class="demo">デモ / コンセプト</em></span><span class="wd">既存テンプレートをもとに、ブランドの色・文章・写真で仕上げた2Dサイト。</span></span></button><button class="wcard a k2d" type="button" data-work="atelier"><span class="th"><img src="/work/atelier.webp" alt="" loading="lazy" decoding="async" width="960" height="600"><span class="play" aria-hidden="true"></span></span>
+      <span class="wt"><b>クラフト工房</b><span class="tags"><em>2D</em><em class="demo">デモ / コンセプト</em></span><span class="wd">既存テンプレートをもとにした、小さな工房とショップのための2Dサイト。</span></span></button></div></div></section>
+<section class="pg pg-news" id="news" data-i="14" aria-labelledby="h-news"><div class="inner"><div class="box"><p class="kicker a">ニュース</p><h2 class="h" id="h-news">テクノロジーの最新情報を毎日</h2><p class="lead a">テクノロジーとウェブの重要なニュースを毎日厳選してお届けします。それぞれに元の記事へのリンク付き。</p><p class="a"><a class="btn ghost" href="/news/">すべてのニュース</a></p></div>
+    <ul class="newslist a" data-news aria-live="polite"><li class="ph"></li><li class="ph"></li><li class="ph"></li><li class="ph"></li></ul></div></section>
+<section class="pg pg-contact" id="contact" data-i="15" aria-labelledby="h-contact"><div class="inner">
+  <div class="box">
+    <p class="kicker a">お問い合わせ</p><h2 class="h" id="h-contact">あなたのプロジェクトについて話しましょう。</h2><p class="lead a">メール、チャット、またはプロジェクトのご相談フォームからどうぞ。通常1営業日以内にお返事します。</p>
+    <ul class="cways">
+      <li class="a"><span class="ci ci-mail" aria-hidden="true"></span><small>メール</small><a href="mailto:contact@worldstudio.ch" dir="ltr">contact@worldstudio.ch</a></li>
+      <li class="a"><span class="ci ci-chat" aria-hidden="true"></span><small>ライブチャット</small><button type="button" class="linkbtn" data-chat>チャットを開く</button></li>
+    </ul>
+    <ul class="offers mini"><li class="a d3"><span class="dot"></span><b>インタラクティブ3D体験</b><em>CHF 1,999から</em></li><li class="a d2"><span class="dot"></span><b>ビジュアル2D体験</b><em>CHF 499から</em></li></ul>
+    <p class="foot a">© 2026 World Studio · 地球と星空の画像：NASA</p>
+  </div>
+  <form class="cform panel a" novalidate data-form>
+  <div class="fh"><h3>プロジェクトのご相談</h3><p>ご連絡先をお知らせください。こちらからご連絡し、プロジェクトを始めます。</p></div>
+  <div class="row2">
+    <label class="f"><span>名</span><input name="first_name" required maxlength="80" autocomplete="given-name"></label>
+    <label class="f"><span>姓</span><input name="last_name" required maxlength="80" autocomplete="family-name"></label>
+  </div>
+  <div class="row2">
+    <label class="f"><span>携帯電話番号</span><input name="phone" type="tel" inputmode="tel" required maxlength="30" pattern="[0-9 +()\-]{6,30}" autocomplete="tel" dir="ltr"></label>
+    <label class="f"><span>メールアドレス</span><input name="email" type="email" required maxlength="160" autocomplete="email" dir="ltr"></label>
+  </div>
+  <fieldset class="types"><legend>プロジェクトの種類</legend><label class="tchip"><input type="radio" name="project_type" value="3d"><span>3D</span></label><label class="tchip"><input type="radio" name="project_type" value="2d"><span>2D</span></label><label class="tchip"><input type="radio" name="project_type" value="unsure"><span>まだ決めていない</span></label></fieldset>
+  <label class="f"><span>プロジェクトについて</span><textarea name="message" rows="3" required minlength="10" maxlength="4000" placeholder="例：ジュエリーショップの3Dウェブサイト（3言語）"></textarea></label>
+  <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+  <div class="send"><button type="submit" class="btn primary">送信して始める</button><p class="privacy">ご入力の情報は、このご相談への回答にのみ使用します。</p></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+<div class="layer" id="geo" aria-hidden="true"></div>
+<div class="layer" id="orbit" aria-hidden="true"></div>
+<nav class="pager" aria-label="すべてのページ">
+  <button class="iconbtn" id="prev" type="button" aria-label="前のページ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6l-6 6 6 6"/></svg></button>
+  <div class="count" aria-live="polite"></div>
+  <button class="iconbtn" id="next" type="button" aria-label="次のページ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></button>
+</nav>
+<dialog id="menu"><div class="mw"><ol></ol></div><button class="iconbtn x" type="button" aria-label="閉じる"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
+<dialog id="langdlg"><div class="mw"><h2>言語を選択</h2><ul></ul></div><button class="iconbtn x" type="button" aria-label="閉じる"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
+<dialog id="lightbox"><div class="lw"><div class="lh"><div></div><button class="iconbtn x" type="button" aria-label="閉じる"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="stage"></div><div class="thumbs"></div></div></dialog>
+<div id="loader" aria-hidden="true"><div class="lw"><div class="lt"><span style="--k:0">W</span><span style="--k:1">O</span><span style="--k:2">R</span><span style="--k:3">L</span><span style="--k:4">D</span><span style="--k:0">&nbsp;</span><span style="--k:6">S</span><span style="--k:7">T</span><span style="--k:8">U</span><span style="--k:9">D</span><span style="--k:10">I</span><span style="--k:11">O</span></div><div class="lb"><i></i></div><div class="ls"></div></div></div>
+<script type="module" src="/js/app.js?v=mwkwgydy"></script>
+</body>
+</html>
