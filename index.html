@@ -16,9 +16,9 @@
     if (b) return b;
   }
   return null;
-}
+}const TZ = {   'Europe/Berlin': 'de', 'Europe/Vienna': 'de', 'Europe/Vaduz': 'de', 'Europe/Busingen': 'de', 'Europe/Paris': 'fr', 'Europe/Monaco': 'fr', 'Europe/Luxembourg': 'fr',   'Europe/Rome': 'it', 'Europe/San_Marino': 'it', 'Europe/Vatican': 'it', 'Europe/London': 'en', 'Europe/Dublin': 'en', 'Europe/Madrid': 'es', 'Atlantic/Canary': 'es',   'Europe/Stockholm': 'sv', 'Europe/Copenhagen': 'da', 'Europe/Oslo': 'da', 'Europe/Helsinki': 'fi', 'Europe/Istanbul': 'tr', 'Europe/Moscow': 'ru', 'Europe/Minsk': 'ru',   'Asia/Yerevan': 'hy', 'Asia/Tbilisi': 'ka', 'Asia/Baku': 'az', 'Asia/Jerusalem': 'he', 'Asia/Tel_Aviv': 'he', 'Asia/Tehran': 'fa', 'Asia/Kabul': 'fa',   'Asia/Kolkata': 'hi', 'Asia/Calcutta': 'hi', 'Asia/Shanghai': 'zh', 'Asia/Chongqing': 'zh', 'Asia/Taipei': 'zh', 'Asia/Hong_Kong': 'zh', 'Asia/Tokyo': 'ja', 'Asia/Seoul': 'ko',   'America/Mexico_City': 'es-MX', 'America/Bogota': 'es-MX', 'America/Lima': 'es-MX', 'America/Caracas': 'es-MX', 'America/Santiago': 'es-MX', 'America/Guatemala': 'es-MX',   'America/Argentina/Buenos_Aires': 'es-AR', 'America/Buenos_Aires': 'es-AR', 'America/Montevideo': 'es-AR', 'America/Sao_Paulo': 'pt-BR', 'Europe/Lisbon': 'pt-BR',   'Asia/Riyadh': 'ar', 'Asia/Dubai': 'ar', 'Asia/Baghdad': 'ar', 'Asia/Qatar': 'ar', 'Asia/Kuwait': 'ar', 'Africa/Cairo': 'ar', 'Asia/Amman': 'ar', 'Asia/Beirut': 'ar', 'Asia/Damascus': 'ar', 'Africa/Casablanca': 'ar', 'Africa/Algiers': 'ar', 'Africa/Tunis': 'ar',   'America/New_York': 'en', 'America/Chicago': 'en', 'America/Denver': 'en', 'America/Los_Angeles': 'en', 'Australia/Sydney': 'en', 'Australia/Melbourne': 'en', 'Pacific/Auckland': 'en', }; const MULTI = { 'Europe/Zurich': ['de', 'fr', 'it', 'en'], 'Europe/Brussels': ['fr', 'de', 'en'], 'Europe/Amsterdam': ['en', 'de'], 'America/Toronto': ['en', 'fr'], 'America/Montreal': ['fr', 'en'], 'Asia/Singapore': ['en', 'zh'] }; function geoLang(list) {   let tz = '';   try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}   if (MULTI[tz]) { const b = pickLang(list); return MULTI[tz].includes(b) ? b : MULTI[tz][0]; }   return TZ[tz] || pickLang(list); } 
 var q=new URLSearchParams(location.search).get('lang'),s=null;try{s=localStorage.getItem('ws-lang')}catch(e){}
-var l=(q&&CODES.indexOf(q)>-1)?q:(s&&CODES.indexOf(s)>-1)?s:pickLang(navigator.languages||[navigator.language]);
+var l=(q&&CODES.indexOf(q)>-1)?q:(s&&CODES.indexOf(s)>-1)?s:geoLang(navigator.languages||[navigator.language]);
 if(l&&l!=='de'){window.__wsGo=1;location.replace('/'+l.toLowerCase()+'/'+location.hash)}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>World Studio — Interaktives 3D- und 2D-Webdesign</title>
@@ -59,8 +59,8 @@ if(l&&l!=='de'){window.__wsGo=1;location.replace('/'+l.toLowerCase()+'/'+locatio
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/site.css?v=mwkxp34b">
-<link rel="modulepreload" href="/js/app.js?v=mwkxp34b">
+<link rel="stylesheet" href="/css/site.css?v=mwlx2kwo">
+<link rel="modulepreload" href="/js/app.js?v=mwlx2kwo">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://worldstudio.ch/#org","name":"World Studio","url":"https://worldstudio.ch/","logo":"https://worldstudio.ch/favicon.svg","image":"https://worldstudio.ch/img/og.jpg","email":"contact@worldstudio.ch","address":{"@type":"PostalAddress","addressCountry":"CH"},"areaServed":["CH","Worldwide"],"knowsLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"],"description":"World Studio: interaktive 3D-Websites und Apps ab CHF 1’999, 2D-Websites ab CHF 499. Schweiz."},{"@type":"WebSite","@id":"https://worldstudio.ch/#site","url":"https://worldstudio.ch/","name":"World Studio","publisher":{"@id":"https://worldstudio.ch/#org"},"inLanguage":["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh-CN","ja","ko"]},{"@type":"WebPage","@id":"https://worldstudio.ch/#page","url":"https://worldstudio.ch/","name":"World Studio — Interaktives 3D- und 2D-Webdesign","description":"World Studio: interaktive 3D-Websites und Apps ab CHF 1’999, 2D-Websites ab CHF 499. Schweiz.","inLanguage":"de","isPartOf":{"@id":"https://worldstudio.ch/#site"},"about":{"@id":"https://worldstudio.ch/#org"}}]}</script>
 </head>
 <body>
@@ -194,6 +194,6 @@ if(l&&l!=='de'){window.__wsGo=1;location.replace('/'+l.toLowerCase()+'/'+locatio
 <dialog id="langdlg"><div class="mw"><h2>Sprache wählen</h2><ul></ul></div><button class="iconbtn x" type="button" aria-label="Schliessen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></dialog>
 <dialog id="lightbox"><div class="lw"><div class="lh"><div></div><button class="iconbtn x" type="button" aria-label="Schliessen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="stage"></div><div class="thumbs"></div></div></dialog>
 <div id="loader" aria-hidden="true"><div class="lw"><div class="lt"><span style="--k:0">W</span><span style="--k:1">O</span><span style="--k:2">R</span><span style="--k:3">L</span><span style="--k:4">D</span><span style="--k:0">&nbsp;</span><span style="--k:6">S</span><span style="--k:7">T</span><span style="--k:8">U</span><span style="--k:9">D</span><span style="--k:10">I</span><span style="--k:11">O</span></div><div class="lb"><i></i></div><div class="ls"></div></div></div>
-<script type="module" src="/js/app.js?v=mwkxp34b"></script>
+<script type="module" src="/js/app.js?v=mwlx2kwo"></script>
 </body>
 </html>
