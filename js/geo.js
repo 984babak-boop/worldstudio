@@ -1,0 +1,18 @@
+(function(){try{if(/bot|crawl|spider|slurp|lighthouse|facebookexternalhit|embedly|preview/i.test(navigator.userAgent))return;var CODES=["de","fr","it","en","es","es-MX","es-AR","pt-BR","sv","da","fi","tr","ru","hy","ka","az","he","ar","fa","hi","zh","ja","ko"];function pickLang(list) {   // best match for a list of BCP-47 tags
+  for (const raw of list) {
+    const t = String(raw || '').toLowerCase();
+    const exact = CODES.find((c) => c.toLowerCase() === t);
+    if (exact) return exact;
+    const base = t.split('-')[0];
+    if (base === 'es') { if (/-(mx|us|gt|hn|sv|ni|cr|pa|cu|do|pr|co|ve|ec|pe|bo|cl|py)$/.test(t)) return t.endsWith('-mx') ? 'es-MX' : 'es-MX'; if (/-(ar|uy)$/.test(t)) return 'es-AR'; return 'es'; }
+    if (base === 'pt') return 'pt-BR';
+    if (base === 'nb' || base === 'no' || base === 'nn') return 'da';
+    if (base === 'iw') return 'he';
+    const b = CODES.find((c) => c.toLowerCase() === base);
+    if (b) return b;
+  }
+  return null;
+}const TZ = {   'Europe/Berlin': 'de', 'Europe/Vienna': 'de', 'Europe/Vaduz': 'de', 'Europe/Busingen': 'de', 'Europe/Paris': 'fr', 'Europe/Monaco': 'fr', 'Europe/Luxembourg': 'fr',   'Europe/Rome': 'it', 'Europe/San_Marino': 'it', 'Europe/Vatican': 'it', 'Europe/London': 'en', 'Europe/Dublin': 'en', 'Europe/Madrid': 'es', 'Atlantic/Canary': 'es',   'Europe/Stockholm': 'sv', 'Europe/Copenhagen': 'da', 'Europe/Oslo': 'da', 'Europe/Helsinki': 'fi', 'Europe/Istanbul': 'tr', 'Europe/Moscow': 'ru', 'Europe/Minsk': 'ru',   'Asia/Yerevan': 'hy', 'Asia/Tbilisi': 'ka', 'Asia/Baku': 'az', 'Asia/Jerusalem': 'he', 'Asia/Tel_Aviv': 'he', 'Asia/Tehran': 'fa', 'Asia/Kabul': 'fa',   'Asia/Kolkata': 'hi', 'Asia/Calcutta': 'hi', 'Asia/Shanghai': 'zh', 'Asia/Chongqing': 'zh', 'Asia/Taipei': 'zh', 'Asia/Hong_Kong': 'zh', 'Asia/Tokyo': 'ja', 'Asia/Seoul': 'ko',   'America/Mexico_City': 'es-MX', 'America/Bogota': 'es-MX', 'America/Lima': 'es-MX', 'America/Caracas': 'es-MX', 'America/Santiago': 'es-MX', 'America/Guatemala': 'es-MX',   'America/Argentina/Buenos_Aires': 'es-AR', 'America/Buenos_Aires': 'es-AR', 'America/Montevideo': 'es-AR', 'America/Sao_Paulo': 'pt-BR', 'Europe/Lisbon': 'pt-BR',   'Asia/Riyadh': 'ar', 'Asia/Dubai': 'ar', 'Asia/Baghdad': 'ar', 'Asia/Qatar': 'ar', 'Asia/Kuwait': 'ar', 'Africa/Cairo': 'ar', 'Asia/Amman': 'ar', 'Asia/Beirut': 'ar', 'Asia/Damascus': 'ar', 'Africa/Casablanca': 'ar', 'Africa/Algiers': 'ar', 'Africa/Tunis': 'ar',   'America/New_York': 'en', 'America/Chicago': 'en', 'America/Denver': 'en', 'America/Los_Angeles': 'en', 'Australia/Sydney': 'en', 'Australia/Melbourne': 'en', 'Pacific/Auckland': 'en', }; const MULTI = { 'Europe/Zurich': ['de', 'fr', 'it', 'en'], 'Europe/Brussels': ['fr', 'de', 'en'], 'Europe/Amsterdam': ['en', 'de'], 'America/Toronto': ['en', 'fr'], 'America/Montreal': ['fr', 'en'], 'Asia/Singapore': ['en', 'zh'] }; function geoLang(list) {   let tz = '';   try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}   if (MULTI[tz]) { const b = pickLang(list); return MULTI[tz].includes(b) ? b : MULTI[tz][0]; }   return TZ[tz] || pickLang(list); } 
+var q=new URLSearchParams(location.search).get('lang'),s=null;try{s=localStorage.getItem('ws-lang')}catch(e){}
+var l=(q&&CODES.indexOf(q)>-1)?q:(s&&CODES.indexOf(s)>-1)?s:geoLang(navigator.languages||[navigator.language]);
+if(l&&l!=='de'){window.__wsGo=1;location.replace('/'+l.toLowerCase()+'/'+location.hash)}}catch(e){}})();
