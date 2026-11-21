@@ -1,0 +1,1 @@
+import{a,b,c,d,e,f,g,h,i,j,k,l,m,n}from"./chunk-M6FQRRQB.js";import"./chunk-3TXHFKDN.js";export{b as CODES,j as CONTACT_EMAIL,k as COUNTRIES,l as DIGITS,f as HTML_LANG,a as LANGS,h as MAIL,g as PAGES,e as RTL,i as SOCIAL,n as geoLang,d as langFromPath,c as langPath,m as pickLang};
